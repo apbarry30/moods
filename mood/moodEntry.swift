@@ -15,7 +15,8 @@ class moodEntry: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    var happy face2
+    var happyface2
+    var happyface1
   @IBOutlet var reminders: UITextField!
 
 }
