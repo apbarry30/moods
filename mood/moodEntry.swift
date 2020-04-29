@@ -9,14 +9,15 @@
 import Foundation
 import UIKit
 
-class moodEntry: UIViewController {
 
+class moodEntry: UIViewController {
+    var happyface2
+       var happyface1
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    var happyface2
-    var happyface1
+   
   @IBOutlet var reminders: UITextField!
 
 }
