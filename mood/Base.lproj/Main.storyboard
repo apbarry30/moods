@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -220,19 +220,18 @@
         <!--Community-->
         <scene sceneID="JI5-UE-MjL">
             <objects>
-                <viewController id="6XH-bT-DX1" sceneMemberID="viewController">
+                <viewController id="6XH-bT-DX1" customClass="community" customModule="mood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ka5-eR-Hhx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Message Your Doctor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1y-Rq-lAu">
-                                <rect key="frame" x="125" y="137" width="165" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message Your Doctor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1y-Rq-lAu">
+                                <rect key="frame" x="124.5" y="128" width="165" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Type your message here..." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZR3-Ph-eRc">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="I'm really sad today." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZR3-Ph-eRc">
                                 <rect key="frame" x="61" y="725" width="229" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -242,19 +241,60 @@
                                 <rect key="frame" x="314" y="729" width="36" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Send"/>
+                                <connections>
+                                    <action selector="sendMessage" destination="6XH-bT-DX1" eventType="touchUpInside" id="Z43-Ya-BMW"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Maybe you see the messages like a text convo here? Otherwise could just be a form to send a message like the email assignment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAh-DO-fxd">
-                                <rect key="frame" x="7" y="355" width="407" height="122"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgt-LA-CgQ">
+                                <rect key="frame" x="194" y="188" width="170" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="CNx-9v-9kr"/>
+                                    <constraint firstAttribute="height" constant="50" id="HCq-ci-vRk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKo-af-iSA">
+                                <rect key="frame" x="7" y="249" width="400" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="Lbn-lw-9HN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SqW-MC-yIf">
+                                <rect key="frame" x="50" y="318" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="1DH-fw-w7p"/>
+                                    <constraint firstAttribute="width" constant="200" id="fcL-XN-b1F"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="2rF-IZ-leE" firstAttribute="trailing" secondItem="cgt-LA-CgQ" secondAttribute="trailing" constant="50" id="Fej-FZ-oDU"/>
+                            <constraint firstItem="UKo-af-iSA" firstAttribute="top" secondItem="K1y-Rq-lAu" secondAttribute="bottom" constant="100" id="IrI-pG-SpI"/>
+                            <constraint firstItem="SqW-MC-yIf" firstAttribute="leading" secondItem="2rF-IZ-leE" secondAttribute="leading" constant="50" id="SMt-vG-YN8"/>
+                            <constraint firstItem="cgt-LA-CgQ" firstAttribute="top" secondItem="2rF-IZ-leE" secondAttribute="top" constant="100" id="TAx-tI-Sf0"/>
+                            <constraint firstItem="K1y-Rq-lAu" firstAttribute="top" secondItem="2rF-IZ-leE" secondAttribute="top" constant="40" id="cWE-7A-7hX"/>
+                            <constraint firstItem="UKo-af-iSA" firstAttribute="centerX" secondItem="ka5-eR-Hhx" secondAttribute="centerX" id="jiU-3U-39X"/>
+                            <constraint firstItem="SqW-MC-yIf" firstAttribute="top" secondItem="2rF-IZ-leE" secondAttribute="top" constant="230" id="qJg-dK-84G"/>
+                            <constraint firstItem="K1y-Rq-lAu" firstAttribute="centerX" secondItem="ka5-eR-Hhx" secondAttribute="centerX" id="tma-gu-SYf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="2rF-IZ-leE"/>
                     </view>
                     <navigationItem key="navigationItem" title="Community" id="Ktm-5p-CVs"/>
+                    <connections>
+                        <outlet property="messageBubble" destination="cgt-LA-CgQ" id="Jk9-bb-TkB"/>
+                        <outlet property="messageText" destination="ZR3-Ph-eRc" id="gtq-KB-Tc8"/>
+                        <outlet property="responseBubble" destination="SqW-MC-yIf" id="HIg-hQ-MOy"/>
+                        <outlet property="warningLabel" destination="UKo-af-iSA" id="apW-ce-Jt1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HLB-Ag-9Az" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -336,9 +376,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="chart.bar.fill" catalog="system" width="128" height="89"/>
-        <image name="message.fill" catalog="system" width="128" height="113"/>
-        <image name="pencil" catalog="system" width="128" height="113"/>
-        <image name="staroflife.fill" catalog="system" width="124" height="128"/>
+        <image name="chart.bar.fill" catalog="system" width="64" height="44"/>
+        <image name="message.fill" catalog="system" width="64" height="56"/>
+        <image name="pencil" catalog="system" width="64" height="56"/>
+        <image name="staroflife.fill" catalog="system" width="62" height="64"/>
     </resources>
 </document>

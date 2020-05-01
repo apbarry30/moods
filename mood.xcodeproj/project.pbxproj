@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		243EBE1D24577550003E5D62 /* moodEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243EBE1C24577550003E5D62 /* moodEntry.swift */; };
+		7C0577F5245BC98200E4B95F /* community.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0577F4245BC98200E4B95F /* community.swift */; };
 		7C8693AB24566CA40042647B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8693AA24566CA40042647B /* AppDelegate.swift */; };
 		7C8693AD24566CA40042647B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8693AC24566CA40042647B /* SceneDelegate.swift */; };
 		7C8693AF24566CA40042647B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8693AE24566CA40042647B /* FirstViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		243EBE1C24577550003E5D62 /* moodEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moodEntry.swift; sourceTree = "<group>"; };
+		7C0577F4245BC98200E4B95F /* community.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = community.swift; sourceTree = "<group>"; };
 		7C8693A724566CA40042647B /* mood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C8693AA24566CA40042647B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C8693AC24566CA40042647B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				7C8693AA24566CA40042647B /* AppDelegate.swift */,
 				7C8693AC24566CA40042647B /* SceneDelegate.swift */,
 				7C8693AE24566CA40042647B /* FirstViewController.swift */,
+				7C0577F4245BC98200E4B95F /* community.swift */,
 				243EBE1C24577550003E5D62 /* moodEntry.swift */,
 				7C8693B224566CA40042647B /* Main.storyboard */,
 				7C8693B824566CA90042647B /* Assets.xcassets */,
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C8693B724566CA40042647B /* mood.xcdatamodeld in Sources */,
+				7C0577F5245BC98200E4B95F /* community.swift in Sources */,
 				7C8693AF24566CA40042647B /* FirstViewController.swift in Sources */,
 				7C8693AB24566CA40042647B /* AppDelegate.swift in Sources */,
 				7C8693AD24566CA40042647B /* SceneDelegate.swift in Sources */,
