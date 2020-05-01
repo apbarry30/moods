@@ -18,13 +18,32 @@ class community: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+  /*  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
           view.endEditing(true)
           super.touchesBegan(touches, with: event)
-      }
+      }*/
+    @objc func keyboardWillShow(Notification:NSNotification){
+        print(self.view.frame.origin.y)
+        if let keyboardSize=(Notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey]as? NSValue)?.cgRectValue{
+            if self.view.frame.origin.y==0{
+                self.view.frame.origin.y -= keyboardSize.height-100
+            }
+        }
+        print(self.view.frame.origin.y)
+    }
+    @objc func keyboardWillHide(Notification:NSNotification){
+        if self.view.frame.origin.y != 0{
+            self.view.frame.origin.y = 0
+        }
+    }
+    
+    
+    
+    
     @IBAction func sendMessage(){
         if (messageText.text != ""){
             messageBubble?.layer.cornerRadius = 15
