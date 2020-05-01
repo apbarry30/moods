@@ -29,7 +29,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okk-ye-gKq">
                                 <rect key="frame" x="70" y="399" width="98" height="98"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Asset 5.png"/>
+                                <state key="normal" image="happy1.png"/>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Add reminders about what happened today" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KCQ-4s-jfW">
                                 <rect key="frame" x="39" y="726" width="340" height="34"/>
@@ -40,17 +40,17 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvm-Vt-zcx">
                                 <rect key="frame" x="247" y="399" width="99" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Asset 12.png"/>
+                                <state key="normal" image="happy2.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLn-rH-gwE">
                                 <rect key="frame" x="71" y="610" width="98" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Asset 9.png"/>
+                                <state key="normal" image="sad.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ec4-h5-gct">
                                 <rect key="frame" x="248" y="611" width="99" height="98"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Asset 1.png"/>
+                                <state key="normal" image="mad.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Suv-6e-WiY">
                                 <rect key="frame" x="183" y="768" width="49" height="30"/>
@@ -64,12 +64,12 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktj-TC-beG">
                                 <rect key="frame" x="70" y="505" width="98" height="98"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Asset 16.png"/>
+                                <state key="normal" image="meh1.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zty-Bu-kCU">
-                                <rect key="frame" x="245" y="505" width="100" height="99"/>
+                                <rect key="frame" x="245" y="506" width="100" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Asset 13.png"/>
+                                <state key="normal" image="meh2.png"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="maybe we can chage this to  include day of week" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Im7-nw-hXK">
                                 <rect key="frame" x="13" y="103" width="374" height="21"/>
@@ -336,15 +336,15 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Asset 1.png" width="99" height="98"/>
-        <image name="Asset 12.png" width="99" height="99"/>
-        <image name="Asset 13.png" width="100" height="99"/>
-        <image name="Asset 16.png" width="98" height="98"/>
-        <image name="Asset 5.png" width="98" height="98"/>
-        <image name="Asset 9.png" width="98" height="100"/>
         <image name="chart.bar.fill" catalog="system" width="64" height="44"/>
+        <image name="happy1.png" width="98" height="98"/>
+        <image name="happy2.png" width="99" height="99"/>
+        <image name="mad.png" width="99" height="98"/>
+        <image name="meh1.png" width="98" height="98"/>
+        <image name="meh2.png" width="100" height="99"/>
         <image name="message.fill" catalog="system" width="64" height="56"/>
         <image name="pencil" catalog="system" width="64" height="56"/>
+        <image name="sad.png" width="98" height="100"/>
         <image name="staroflife.fill" catalog="system" width="62" height="64"/>
     </resources>
 </document>
