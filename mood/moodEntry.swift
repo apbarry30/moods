@@ -11,8 +11,6 @@ import UIKit
 
 
 class moodEntry: UIViewController {
-    var happyface2
-       var happyface1
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
