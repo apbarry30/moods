@@ -15,6 +15,7 @@
 		7C8693B724566CA40042647B /* mood.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7C8693B524566CA40042647B /* mood.xcdatamodeld */; };
 		7C8693B924566CA90042647B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C8693B824566CA90042647B /* Assets.xcassets */; };
 		7C8693BC24566CA90042647B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C8693BA24566CA90042647B /* LaunchScreen.storyboard */; };
+		7C90ED1E245BA7F7002740C7 /* 1x in Resources */ = {isa = PBXBuildFile; fileRef = 7C90ED1D245BA7F7002740C7 /* 1x */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		7C8693B824566CA90042647B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C8693BB24566CA90042647B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C8693BD24566CA90042647B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C90ED1D245BA7F7002740C7 /* 1x */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 1x; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				7C8693AC24566CA40042647B /* SceneDelegate.swift */,
 				7C8693AE24566CA40042647B /* FirstViewController.swift */,
 				243EBE1C24577550003E5D62 /* moodEntry.swift */,
+				7C90ED1D245BA7F7002740C7 /* 1x */,
 				7C8693B224566CA40042647B /* Main.storyboard */,
 				7C8693B824566CA90042647B /* Assets.xcassets */,
 				7C8693BA24566CA90042647B /* LaunchScreen.storyboard */,
@@ -134,6 +137,7 @@
 				7C8693BC24566CA90042647B /* LaunchScreen.storyboard in Resources */,
 				7C8693B924566CA90042647B /* Assets.xcassets in Resources */,
 				7C8693B424566CA40042647B /* Main.storyboard in Resources */,
+				7C90ED1E245BA7F7002740C7 /* 1x in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
