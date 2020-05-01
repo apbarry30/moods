@@ -12,9 +12,10 @@ import UIKit
 class community: UIViewController {
     
     @IBOutlet var messageText:UITextField!
-    @IBOutlet var messageBubble:UILabel!
-    @IBOutlet var responseBubble:UILabel!
-    @IBOutlet var warningLabel:UILabel!
+    @IBOutlet weak var messageBubble:UILabel!
+    @IBOutlet weak var responseBubble:UILabel!
+    @IBOutlet weak var warningLabel:UILabel!
+    @IBOutlet weak var typing:UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,26 +52,64 @@ class community: UIViewController {
     
     @IBAction func sendMessage(){
         if (messageText.text != ""){
-            messageBubble?.layer.cornerRadius = 15
-            messageBubble?.layer.masksToBounds = true
-            messageBubble.backgroundColor = .systemTeal
-            messageBubble.text=messageText.text
-            
-            
-         warningLabel.text="In case of emergency call 911 or the Suicide Prevention Hotline 1-800-273-8255."
-            //I want a delay before the response pops up but I can't figure out how
-            
-            responseBubble?.layer.cornerRadius = 15
-            responseBubble?.layer.masksToBounds = true
-            responseBubble.backgroundColor = .lightGray
-            responseBubble.text="I'm sorry to hear that. Would you like to share more about what happened?"
-           
+            let words=messageText.text
+            UIView.animate(withDuration: 0.5, delay: 0.50, options: UIView.AnimationOptions.curveEaseOut, animations: {
+                       self.messageBubble.alpha = 0.0},
+                           completion: {(finished: Bool) -> Void in
+                        self.messageBubble?.layer.cornerRadius = 15
+                        self.messageBubble?.layer.masksToBounds = true
+                        self.messageBubble.backgroundColor = .systemTeal
+                        self.messageBubble.text=words
+                UIView.animate(withDuration: 0.15, delay: 0.0, options: UIView.AnimationOptions.curveEaseIn, animations: {
+                        self.messageBubble.alpha = 1.0},
+                               completion: nil)})
+        
+        UIView.animate(withDuration: 0, delay: 0.50, options: UIView.AnimationOptions.curveEaseOut, animations: {
+            self.warningLabel.alpha = 0.0},
+                       completion: {(finished: Bool) -> Void in
+                        self.warningLabel.text="In case of emergency call 911 or the Suicide Prevention Hotline 1-800-273-8255."
+                        UIView.animate(withDuration: 0.25, delay: 1.50, options: UIView.AnimationOptions.curveEaseIn, animations: {
+                        self.warningLabel.alpha = 1.0},
+                           completion: nil)})
 
-          
-        }
+          /*  UIView.animate(withDuration: 0.5, delay: 2.50, options: UIView.AnimationOptions.curveEaseOut, animations: {
+                           self.typing.alpha = 0.0},
+                                      completion: {(finished: Bool) -> Void in
+                                       self.typing?.layer.cornerRadius = 15
+                                       self.typing?.layer.masksToBounds = true
+                                       self.typing.backgroundColor = .lightGray
+                                       self.typing.text="..."
+                                       UIView.animate(withDuration: 0.5, delay: 1.50, options: UIView.AnimationOptions.curveEaseIn, animations: {
+                                       self.typing.alpha = 1.0},
+                                          completion: nil)
+
+            })*/ //fade in dots
+
+        
+       /* UIView.animate(withDuration: 0.5, delay: 4.50, options: UIView.AnimationOptions.curveEaseOut, animations: {
+        self.typing.alpha = 0.0},
+                   completion: nil)*/ //trying to fade dots back out
+    
+        UIView.animate(withDuration: 0.5, delay: 4.0, options: UIView.AnimationOptions.curveEaseOut, animations: {
+                self.responseBubble.alpha = 0.0},
+                           completion: {(finished: Bool) -> Void in
+                            self.responseBubble?.layer.cornerRadius = 15
+                            self.responseBubble?.layer.masksToBounds = true
+                            self.responseBubble.backgroundColor = .lightGray
+                            self.responseBubble.text="I'm sorry to hear that. Would you like to share more about what happened?"
+                            UIView.animate(withDuration: 0.15, delay: 1.50, options: UIView.AnimationOptions.curveEaseIn, animations: {
+                            self.responseBubble.alpha = 1.0},
+                               completion: nil)})
+    }//end of sendMessage func
+        messageText.text=""
     }
 }
-/*
+
+
+      
+         
+ 
+
 
     /*
     // MARK: - Navigation
@@ -82,4 +121,5 @@ class community: UIViewController {
     }
     */
 
- }*/
+ 
+

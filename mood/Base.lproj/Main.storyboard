@@ -231,7 +231,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="I had a hard day today" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZR3-Ph-eRc">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZR3-Ph-eRc">
                                 <rect key="frame" x="61" y="725" width="229" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -274,6 +274,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQu-SO-GDn">
+                                <rect key="frame" x="50" y="271" width="60" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="q2K-bK-TlG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -281,10 +290,12 @@
                             <constraint firstItem="UKo-af-iSA" firstAttribute="top" secondItem="K1y-Rq-lAu" secondAttribute="bottom" constant="100" id="IrI-pG-SpI"/>
                             <constraint firstItem="SqW-MC-yIf" firstAttribute="leading" secondItem="2rF-IZ-leE" secondAttribute="leading" constant="50" id="SMt-vG-YN8"/>
                             <constraint firstItem="cgt-LA-CgQ" firstAttribute="top" secondItem="2rF-IZ-leE" secondAttribute="top" constant="100" id="TAx-tI-Sf0"/>
+                            <constraint firstItem="DQu-SO-GDn" firstAttribute="leading" secondItem="2rF-IZ-leE" secondAttribute="leading" constant="50" id="WoU-EH-nvn"/>
                             <constraint firstItem="K1y-Rq-lAu" firstAttribute="top" secondItem="2rF-IZ-leE" secondAttribute="top" constant="40" id="cWE-7A-7hX"/>
                             <constraint firstItem="UKo-af-iSA" firstAttribute="centerX" secondItem="ka5-eR-Hhx" secondAttribute="centerX" id="jiU-3U-39X"/>
                             <constraint firstItem="SqW-MC-yIf" firstAttribute="top" secondItem="2rF-IZ-leE" secondAttribute="top" constant="230" id="qJg-dK-84G"/>
                             <constraint firstItem="K1y-Rq-lAu" firstAttribute="centerX" secondItem="ka5-eR-Hhx" secondAttribute="centerX" id="tma-gu-SYf"/>
+                            <constraint firstItem="DQu-SO-GDn" firstAttribute="top" secondItem="UKo-af-iSA" secondAttribute="bottom" constant="20" id="wZN-c0-hQ5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2rF-IZ-leE"/>
                     </view>
@@ -293,6 +304,7 @@
                         <outlet property="messageBubble" destination="cgt-LA-CgQ" id="Jk9-bb-TkB"/>
                         <outlet property="messageText" destination="ZR3-Ph-eRc" id="gtq-KB-Tc8"/>
                         <outlet property="responseBubble" destination="SqW-MC-yIf" id="HIg-hQ-MOy"/>
+                        <outlet property="typing" destination="DQu-SO-GDn" id="llN-ra-MGv"/>
                         <outlet property="warningLabel" destination="UKo-af-iSA" id="apW-ce-Jt1"/>
                     </connections>
                 </viewController>
