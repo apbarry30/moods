@@ -19,6 +19,8 @@ class community: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let tapGesture=UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        self.view.addGestureRecognizer(tapGesture)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
@@ -26,6 +28,9 @@ class community: UIViewController {
           view.endEditing(true)
           super.touchesBegan(touches, with: event)
       }*/
+    @objc func dismissKeyboard(){
+        messageText.resignFirstResponder()
+    }
     @objc func keyboardWillShow(Notification:NSNotification){
         print(self.view.frame.origin.y)
         if let keyboardSize=(Notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey]as? NSValue)?.cgRectValue{
@@ -58,7 +63,7 @@ class community: UIViewController {
             responseBubble?.layer.cornerRadius = 15
             responseBubble?.layer.masksToBounds = true
             responseBubble.backgroundColor = .lightGray
-            responseBubble.text="I'm sorry to hear you're not feeling well. Did something happen?"
+            responseBubble.text="I'm sorry to hear that. Would you like to share more about what happened?"
            
 
           
