@@ -33,7 +33,7 @@ class community: UIViewController {
             messageBubble.text=messageText.text
             
             
-         warningLabel.text="In case of emergency call 911 or the Suicide Prevention Hotline 1-800-273-8255"
+         warningLabel.text="In case of emergency call 911 or the Suicide Prevention Hotline 1-800-273-8255."
             //I want a delay before the response pops up but I can't figure out how
             
             responseBubble?.layer.cornerRadius = 15
