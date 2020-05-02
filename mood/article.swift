@@ -10,5 +10,4 @@ import Foundation
 struct Article {
     var image:String?
     var title:String?
-    var desc:String?
 }

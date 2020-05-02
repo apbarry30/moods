@@ -41,15 +41,8 @@ class inspirationTable: UITableViewController {
         // Configure the cell...
         let article=articles[indexPath.row]
         cell.textLabel?.text=article.title
-        cell.detailTextLabel?.text=article.desc
-        
-        switch (article.image){
-            case "moodballs.jpg":
-                cell.imageView?.image=UIImage(named:"moodballs.jpg")
-        default:
-            cell.imageView?.image=UIImage(named:"moodballs.jpg")
-        }
-        
+        cell.imageView?.image=UIImage(named:article.image ?? "moodballs.png")
+
         
         return cell
     }
