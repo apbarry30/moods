@@ -12,7 +12,19 @@ import UIKit
 
 class moodEntry: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
-     
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Do any additional setup after loading the view.
+    }
+
+     //graph
+    
+       
+
+    @IBOutlet var textField: UITextField!
+    //slider
       @IBOutlet var slider:UISlider!
       var currentValue: Int = 50
       @IBOutlet var reminders: UITextField!
@@ -24,7 +36,8 @@ class moodEntry: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate 
     //slider variables
     @IBOutlet var outputMoodScale: UILabel!
 
-
+    
+    
     
 //protocol for picker view;
       func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
@@ -52,22 +65,30 @@ class moodEntry: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate 
          }
     
     
-    
     //slidercode
     @IBAction func sliderMoved(slider:UISlider){
-          
-          currentValue = lroundf(slider.value)
-          print("the value of the slider is now: \(slider.value)")
-            outputMoodScale.text = String(currentValue)
-      }
-    
-      //reset when done
-    @IBAction func reset(){
+        currentValue = lroundf(slider.value)
+        print("the value of the slider is now: \(slider.value)")
+        outputMoodScale.text = String(currentValue)
         
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
+    
+      //reset when done
+
+   
+    @IBAction func enter(_ segue: UIStoryboardSegue) {
+            currentValue = lroundf(slider.value)
+            print(currentValue)
+            performSegue(withIdentifier: "segue", sender: self)
+        }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        let barController = segue.destination as! BarChartViewController
+        barController.myDoube = currentValue
+        print(currentValue)
+//        barController.myString = textField.text ?? "enter a value"
+       }
+
 
 }
