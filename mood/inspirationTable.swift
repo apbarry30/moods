@@ -46,7 +46,9 @@ class inspirationTable: UITableViewController {
         
         return cell
     }
-    
+    @IBAction func done(_segue:UIStoryboardSegue){
+          
+      }
 
     /*
     // Override to support conditional editing of the table view.

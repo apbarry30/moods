@@ -16,6 +16,8 @@
 		7C1CE30C245D0121009B0758 /* dep.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C1CE30B245D0121009B0758 /* dep.png */; };
 		7C1CE30E245D0210009B0758 /* Lost.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C1CE30D245D0210009B0758 /* Lost.png */; };
 		7C1CE310245D269F009B0758 /* good.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C1CE30F245D269F009B0758 /* good.png */; };
+		7C1CE318245D2A55009B0758 /* godnews.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C1CE317245D2A55009B0758 /* godnews.png */; };
+		7C1CE31A245D2C5E009B0758 /* articlepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1CE319245D2C5E009B0758 /* articlepage.swift */; };
 		7C654C57245CB4D500DE5351 /* inspirationTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C654C56245CB4D500DE5351 /* inspirationTable.swift */; };
 		7C654C59245CB5A600DE5351 /* article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C654C58245CB5A600DE5351 /* article.swift */; };
 		7C654C5B245CB69600DE5351 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C654C5A245CB69600DE5351 /* SampleData.swift */; };
@@ -39,6 +41,8 @@
 		7C1CE30B245D0121009B0758 /* dep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dep.png; sourceTree = "<group>"; };
 		7C1CE30D245D0210009B0758 /* Lost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lost.png; sourceTree = "<group>"; };
 		7C1CE30F245D269F009B0758 /* good.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = good.png; sourceTree = "<group>"; };
+		7C1CE317245D2A55009B0758 /* godnews.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = godnews.png; sourceTree = "<group>"; };
+		7C1CE319245D2C5E009B0758 /* articlepage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = articlepage.swift; sourceTree = "<group>"; };
 		7C654C56245CB4D500DE5351 /* inspirationTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inspirationTable.swift; sourceTree = "<group>"; };
 		7C654C58245CB5A600DE5351 /* article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = article.swift; sourceTree = "<group>"; };
 		7C654C5A245CB69600DE5351 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
@@ -85,19 +89,21 @@
 			isa = PBXGroup;
 			children = (
 				7C8693AA24566CA40042647B /* AppDelegate.swift */,
+				7C1CE319245D2C5E009B0758 /* articlepage.swift */,
 				7C8693AC24566CA40042647B /* SceneDelegate.swift */,
 				7C8693AE24566CA40042647B /* FirstViewController.swift */,
 				243EBE1C24577550003E5D62 /* moodEntry.swift */,
 				7C8693B224566CA40042647B /* Main.storyboard */,
 				7C654C56245CB4D500DE5351 /* inspirationTable.swift */,
+				7C654C58245CB5A600DE5351 /* article.swift */,
 				7C654C60245CC31400DE5351 /* moodballs.jpg */,
 				7C1CE301245CF7FE009B0758 /* nyt3.png */,
 				7C1CE30D245D0210009B0758 /* Lost.png */,
 				7C1CE307245CFE1C009B0758 /* covid.png */,
 				7C654C5A245CB69600DE5351 /* SampleData.swift */,
 				7C1CE30F245D269F009B0758 /* good.png */,
+				7C1CE317245D2A55009B0758 /* godnews.png */,
 				7C1CE305245CF978009B0758 /* grat.png */,
-				7C654C58245CB5A600DE5351 /* article.swift */,
 				7C1CE30B245D0121009B0758 /* dep.png */,
 				7C1CE309245D0015009B0758 /* anxiety.png */,
 				7C1CE303245CF8C3009B0758 /* fall.png */,
@@ -177,6 +183,7 @@
 				7C8693BC24566CA90042647B /* LaunchScreen.storyboard in Resources */,
 				7C1CE310245D269F009B0758 /* good.png in Resources */,
 				7C1CE30C245D0121009B0758 /* dep.png in Resources */,
+				7C1CE318245D2A55009B0758 /* godnews.png in Resources */,
 				7C8693B924566CA90042647B /* Assets.xcassets in Resources */,
 				7C8693B424566CA40042647B /* Main.storyboard in Resources */,
 			);
@@ -189,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C1CE31A245D2C5E009B0758 /* articlepage.swift in Sources */,
 				7C8693B724566CA40042647B /* mood.xcdatamodeld in Sources */,
 				7C654C59245CB5A600DE5351 /* article.swift in Sources */,
 				7C8693AF24566CA40042647B /* FirstViewController.swift in Sources */,
