@@ -283,11 +283,10 @@
         <scene sceneID="mUh-bd-Q1m">
             <objects>
                 <tableViewController id="i0k-db-NGV" customClass="inspirationTable" customModule="mood" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="KZq-6m-8zU">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="KZq-6m-8zU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <color key="separatorColor" red="0.1056920241" green="0.092270484969999997" blue="0.70420220280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="InspirationTable" textLabel="WED-QZ-rmJ" imageView="sVm-dr-d6Q" rowHeight="100" style="IBUITableViewCellStyleDefault" id="XXv-g7-P8m">
                                 <rect key="frame" x="0.0" y="28" width="414" height="100"/>
@@ -311,6 +310,9 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                <connections>
+                                    <segue destination="EIj-Qk-9TD" kind="presentation" id="dum-Gg-D3H"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -323,6 +325,140 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RgY-lL-J9e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1655.072463768116" y="1725.6696428571429"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vRh-Hl-5AT">
+            <objects>
+                <viewController id="cGZ-Aj-12e" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xp3-Rd-MrD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I54-6E-SgF">
+                                <rect key="frame" x="7" y="156" width="400" height="2029"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="79Y-3W-mCq"/>
+                                </constraints>
+                                <mutableString key="text">Positive Trends
+
+In Chile, strangers write letters to offer hope to coronavirus patients in hospital 
+1 May 2020 - With social distancing in full force and people retreating into digital worlds, a Chilean hospital has reintroduced letter writing as a way to comfort its coronavirus-stricken patients. With a little help from local media and social networks, the idea went viral. As of Wednesday [29 April], 1,700 letters had been written by children, the elderly, and people confined to their homes, from all over the country and from Chileans living abroad. (more)
+
+Park right of the jet and enjoy the movie: lockdown cinema at empty Lithuania airport 
+1 May 2020 - A cargo airplane took off from Vilnius airport on Thursday [30 April], while just a few hundred meters away people watched a movie from their cars at a makeshift drive-in cinema on the airport tarmac. Some 3.8 million people flew through Vilnius airport last year, but all scheduled passenger flights ceased a month ago, as Lithuania went into lockdown to fight the virus. (more)
+
+Germany's Merkel wants green recovery from coronavirus crisis 
+1 May 2020 - Governments should focus on climate protection when considering fiscal stimulus packages to support an economic recovery from the coronavirus pandemic, German Chancellor Angela Merkel said on Tuesday [28 April]. (more)
+
+Transition to low-carbon energy may accelerate after crisis: Shell 
+1 May 2020 - The ongoing transition to low-carbon energy sources may accelerate as economies recover from the impact of the coronavirus crisis, the head of oil and gas company Royal Dutch Shell said on Thursday [30 April]. The head of the world's energy watchdog, Fatih Birol, told Reuters this week that global efforts to minimize the fallout from the pandemic presented an historic opportunity to scale up the technologies needed to move to cleaner energy. (more)
+
+1,000-year-old English mill resumes flour production to meet demand during coronavirus pandemic 
+30 April 2020 - A 1,000-year-old water mill in southwest England ... has resumed production to meet demand for flour during the current coronavirus outbreak. The Sturminster Newton Mill was last fully operational in 1970, before becoming a museum and normally producing flour just two days a month during the summer. It has now produced more than 2,200 pounds of flour in the last few weeks, the same amount as it would usually produce in an entire year. (more)
+
+A Dutch flower farm spelled out a special message for tourists missing the annual tulip blooms 
+30 April 2020 - Every year, tourists descend on the Netherlands to revel in the bright and colorful tulip fields. But with coronavirus putting many travel plans on hold, tourists have been notably absent this year. That's why Dutch Daffodils, a Dutch family flower farm, and Tulips in Holland, a travel blog dedicated to the tulips in the Netherlands, teamed up to create a special message for those sad about missing the flowers this year. (more)
+
+Baking during a pandemic can reduce stress and provide comfort 
+30 April 2020 - People around the world ... have been advised or ordered to stay home. Many are taking up bread baking to fill the time and ease their nerves -- and enjoy some good bread as a result. One study on baking's impact on mental health found it helped participants gain a sense of purpose, structure their days, and increase their motivation levels. (more)
+
+In Italy, 'suspended shopping' helps those facing economic hardship during pandemic 
+29 April 2020 - In Italy, where the coronavirus has shuttered more than 2 million businesses and left 1 in every 2 workers without income, some Italians are putting a new twist on an old custom to help the needy and restart the economy. On a recent morning, a shopper asks that 10 euros ($10.83) be added to her bill for what's called la spesa sospesa, 'suspended shopping.' The concept derives from the century-old Neapolitan tradition of 'suspended coffee' -- when a customer in a cafe pays in advance for someone who can't afford it. (more)
+
+Italy: In Naples, pandemic 'solidarity baskets' help feed the homeless 
+29 April 2020 - In lockdown since March 10, Naples, a normally bustling city of more than 2 million, is now a ghost town. Acts of charity, long a hallmark of this city, have become more important than ever as a means of sustenance. Pina Andelora and her partner Angelo Picone ... realized that with their city's soup kitchens closed, they could still be useful. They would prepare meals for the homeless. [They relied on an old Neapolitan custom -- lowering food baskets from their balcony.] It has been done for centuries. (more)
+
+'He said it was the stupidest idea he had ever seen' 
+28 April 2020 - When Abigail Forsyth first came up with the idea of making and selling reusable coffee cups, one of the first designers she approached to help was utterly dismissive. Fast forward to today, and KeepCup has now sold more than 10 million cups around the world. The company estimates that this has prevented some eight billion disposable ones going into rubbish bins. (more)
+
+Uncovering the mystery of Japan's 'Stonehenge' 
+28 April 2020 - The ancient Kanayama Megaliths are extraordinary in their complexity. Across three sites, the solar observatories accurately measure not only solstices and equinoxes but also leap years. But they would have been left hidden in the forest if it weren't for two people who stumbled upon some strange etchings in the stones. (more)
+
+Manila gets its skyline back as air quality improves amid COVID-19 lockdown 
+27 April 2020 - Filipinos living in the country's capital region have unimpeded views of the Sierra Madre mountain range -- a sight not seen in decades through Manila's notoriously polluted air. 'This health crisis, although truly unfortunate, provided us a glimpse of the quality of the air we and our families could be enjoying if our economy utilizes more of the clean sources of energy and not fossil fuel,' said lawmaker Loren Legarda. (more)
+
+Nigeria declares new conservation zone for most threatened chimpanzee 
+27 April 2020 - The government of Nigeria's Ekiti state has issued an executive order establishing a conservation area within the Ise Forest Reserve, where about 20 Nigeria-Cameroon chimpanzees are believed to survive. Nigeria's Ekiti state government has moved to establish a conservation area within the Ise Forest Reserve, an important step toward protecting the habitat of the Nigeria-Cameroon chimpanzee (Pan troglodytes ellioti). (more)
+
+US journalists seek to help colleagues affected by virus 
+27 April 2020 - Journalists from around the U.S. are finding ways to help their colleagues simply pay rent or buy groceries as they face lost or reduced paychecks because of layoffs and furloughs caused by the coronavirus pandemic. (more)
+
+Retired farmer with ailing wife sends extra face mask to New York, Governor Cuomo says: 'Humanity at Its best' 
+26 April 2020 - One retired farmer left an impression on New York Governor Andrew Cuomo by his surprising act of kindness amid the novel coronavirus pandemic. On Friday [24 April], Cuomo, 62, highlighted a handwritten letter that he said he'd received from a former farmer from Kansas named Dennis, who also sent Cuomo an unused N95 mask for the frontline workers dealing with coronavirus patients. (more)
+
+South Africa: Urban gardens take root in Johannesburg 
+26 April 2020 - Johannesburg is turning from a city known for crime and rapid urbanization to one where urban farmers grow food to feed families and neighbors. (more)
+
+Black hole bends escaping light 'like a boomerang' 
+25 April 2020 - Light escaping from a black hole may 'boomerang' its way to freedom, new X-ray images reveal. Researchers found this odd behavior while reviewing archival X-ray observations of a black hole that's approximately 10 times as massive as our sun. Located about 17,000 light-years from Earth, the black hole siphons material from a partner star; together, the black hole and star are known as XTE J1550-564. (more)
+
+Kenyan nutritionist is keeping schoolkids fed -- even during lockdown 
+25 April 2020 - The coronavirus crisis has forced schools in Kenya to close, but Wawira Njiru believes this is no reason for children to go hungry. In 2012, the 29-year-old nutritionist founded non-profit Food for Education in her hometown, Ruiru, on the outskirts of the Kenyan capital, Nairobi. Her mission is to provide cheap and nourishing lunches to primary school children from poor families. Since schools closed a month ago, Njiru says she has been feeding more mouths than ever. (more)
+
+Hubble telescope delivers stunning 30th birthday picture 
+24 April 2020 - It's 30 years ago to the day that the Hubble telescope was launched -- and to celebrate its birthday, the veteran observatory has produced another astonishing image of the cosmos. This one is of a star-forming region close to our Milky Way Galaxy, about 163,000 light-years from Earth. The remarkable pictures it has taken of planets, stars, and galaxies have transformed our view of the cosmos. (more)
+
+Captain Tom Moore tops the charts at the age of 99 
+24 April 2020 - Captain Tom Moore, the war veteran who walked laps of his garden to raise money for the NHS [National Health Service], has become the oldest person ever to score a number one single in the UK. At the age of 99, his duet with Michael Ball has knocked Canadian superstar The Weeknd from the top of the charts. Their cover of You'll Never Walk Alone sold 82,000 copies, with proceeds going to the NHS Charities Together fund. (more)
+
+Hubble Space Telescope celebrates 30 years of discoveries and awe-inspiring images 
+24 April 2020 - The Hubble Space Telescope launched 30 years ago on Friday [24 April], forever changing the way we see the universe. The telescope's ethereal, dreamy, and almost fantasy-like views of space vistas have inspired people for decades and led to some of the most important astronomical discoveries. The space observatory and its instruments, an international cooperative effort between NASA and the European Space Agency, captures unprecedented views of stars, galaxies, and the distant universe in visible, ultraviolet, and near-infrared light. (more)
+
+This telescope is our next great detective in the universe 
+24 April 2020 - After more than 16 years of observations, NASA's Spitzer Space Telescope came to an end on Thursday [30 January]. It leaves a legacy of discoveries in its wake, which in turn has created new questions and intriguing targets for follow-up observations. Spitzer was our infrared detective, spying exoplanets and distant galaxies. Now, there's a gap in infrared observations until NASA's James Webb Space Telescope launches in 2021. This large infrared telescope will be the premier observatory of the next decade, according to NASA. (more)
+
+UK: Captain Tom Moore - How the war veteran captured our hearts 
+23 April 2020 - There was an unmistakable sense of conviction in Tom Moore's voice as he addressed the camera after completing his walk. Moments before, the 99-year-old war veteran had completed the 100th lap of a sponsored walk around his Bedfordshire garden [to raise money for UK's National Health Service]. In just a few days, Mr Moore, nicknamed Captain Tom by his growing legion of fans, had risen from nowhere to the status of near national treasure. (more)
+
+UK: Captain Tom Moore passes British Pound Sterling 23m in NHS fundraising 
+23 April 2020 - A 99-year-old war veteran has been left ''speechless' after raising more than British Pound Sterling 23m for the NHS [National Health Service]. Captain Tom Moore originally aimed to raise just British Pound Sterling 1,000 for NHS Charities Together by completing 100 laps of his garden before his 100th birthday. The Duke of Cambridge hailed him as a 'one-man fundraising machine'. (more)
+
+
+Positive Trends Archive
+
+Send Us Good News
+
+Send Comments
+
+Support GGN's continued success
+
+
+find us on facebook  twitter  twitter
+
+SocialTwist Tell-a-Friend
+
+
+
+ 	
+
+
+World News | Genetic Engineering | Education | Business | Health News 
+
+Search | Global News | Agriculture and Environmental News | Business News 
+Culture News | Education News | Government News | Health News 
+Science and Technology News | World Peace | Maharishi Programmes 
+Press Conferences | Transcendental Meditation | Celebration Calendars | Gifts
+News by Country | News in Pictures | What's New | Modem/High Speed | RSS/XML 
+
+Copyright © 2020 Global Good News Service 
+</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="I54-6E-SgF" firstAttribute="top" secondItem="KWD-SO-yLE" secondAttribute="top" constant="100" id="C10-e8-xcn"/>
+                            <constraint firstItem="I54-6E-SgF" firstAttribute="centerX" secondItem="xp3-Rd-MrD" secondAttribute="centerX" id="nnM-YJ-L5F"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KWD-SO-yLE"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Tgh-px-xub"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sts-Ng-900" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3371.0144927536235" y="1718.9732142857142"/>
         </scene>
         <!--Inspiration-->
         <scene sceneID="mEs-B4-5ZG">
@@ -342,6 +478,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q2x-bU-CmJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="744.92753623188412" y="1725.6696428571429"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ecy-hb-Ti3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EIj-Qk-9TD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dCp-aR-UXq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cGZ-Aj-12e" kind="relationship" relationship="rootViewController" id="yrw-PR-iK1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dZh-7r-hgt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2460.8695652173915" y="1718.9732142857142"/>
         </scene>
     </scenes>
     <resources>

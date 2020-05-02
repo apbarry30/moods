@@ -11,6 +11,11 @@
 		7C1CE302245CF7FE009B0758 /* nyt3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C1CE301245CF7FE009B0758 /* nyt3.png */; };
 		7C1CE304245CF8C3009B0758 /* fall.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C1CE303245CF8C3009B0758 /* fall.png */; };
 		7C1CE306245CF978009B0758 /* grat.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C1CE305245CF978009B0758 /* grat.png */; };
+		7C1CE308245CFE1C009B0758 /* covid.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C1CE307245CFE1C009B0758 /* covid.png */; };
+		7C1CE30A245D0015009B0758 /* anxiety.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C1CE309245D0015009B0758 /* anxiety.png */; };
+		7C1CE30C245D0121009B0758 /* dep.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C1CE30B245D0121009B0758 /* dep.png */; };
+		7C1CE30E245D0210009B0758 /* Lost.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C1CE30D245D0210009B0758 /* Lost.png */; };
+		7C1CE310245D269F009B0758 /* good.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C1CE30F245D269F009B0758 /* good.png */; };
 		7C654C57245CB4D500DE5351 /* inspirationTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C654C56245CB4D500DE5351 /* inspirationTable.swift */; };
 		7C654C59245CB5A600DE5351 /* article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C654C58245CB5A600DE5351 /* article.swift */; };
 		7C654C5B245CB69600DE5351 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C654C5A245CB69600DE5351 /* SampleData.swift */; };
@@ -29,6 +34,11 @@
 		7C1CE301245CF7FE009B0758 /* nyt3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nyt3.png; path = ../../../Desktop/nyt3.png; sourceTree = "<group>"; };
 		7C1CE303245CF8C3009B0758 /* fall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fall.png; sourceTree = "<group>"; };
 		7C1CE305245CF978009B0758 /* grat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grat.png; sourceTree = "<group>"; };
+		7C1CE307245CFE1C009B0758 /* covid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = covid.png; sourceTree = "<group>"; };
+		7C1CE309245D0015009B0758 /* anxiety.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = anxiety.png; sourceTree = "<group>"; };
+		7C1CE30B245D0121009B0758 /* dep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dep.png; sourceTree = "<group>"; };
+		7C1CE30D245D0210009B0758 /* Lost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lost.png; sourceTree = "<group>"; };
+		7C1CE30F245D269F009B0758 /* good.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = good.png; sourceTree = "<group>"; };
 		7C654C56245CB4D500DE5351 /* inspirationTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inspirationTable.swift; sourceTree = "<group>"; };
 		7C654C58245CB5A600DE5351 /* article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = article.swift; sourceTree = "<group>"; };
 		7C654C5A245CB69600DE5351 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
@@ -82,9 +92,14 @@
 				7C654C56245CB4D500DE5351 /* inspirationTable.swift */,
 				7C654C60245CC31400DE5351 /* moodballs.jpg */,
 				7C1CE301245CF7FE009B0758 /* nyt3.png */,
+				7C1CE30D245D0210009B0758 /* Lost.png */,
+				7C1CE307245CFE1C009B0758 /* covid.png */,
 				7C654C5A245CB69600DE5351 /* SampleData.swift */,
+				7C1CE30F245D269F009B0758 /* good.png */,
 				7C1CE305245CF978009B0758 /* grat.png */,
 				7C654C58245CB5A600DE5351 /* article.swift */,
+				7C1CE30B245D0121009B0758 /* dep.png */,
+				7C1CE309245D0015009B0758 /* anxiety.png */,
 				7C1CE303245CF8C3009B0758 /* fall.png */,
 				7C8693B824566CA90042647B /* Assets.xcassets */,
 				7C8693BA24566CA90042647B /* LaunchScreen.storyboard */,
@@ -153,10 +168,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C1CE306245CF978009B0758 /* grat.png in Resources */,
+				7C1CE30E245D0210009B0758 /* Lost.png in Resources */,
+				7C1CE308245CFE1C009B0758 /* covid.png in Resources */,
 				7C654C61245CC31400DE5351 /* moodballs.jpg in Resources */,
 				7C1CE302245CF7FE009B0758 /* nyt3.png in Resources */,
+				7C1CE30A245D0015009B0758 /* anxiety.png in Resources */,
 				7C1CE304245CF8C3009B0758 /* fall.png in Resources */,
 				7C8693BC24566CA90042647B /* LaunchScreen.storyboard in Resources */,
+				7C1CE310245D269F009B0758 /* good.png in Resources */,
+				7C1CE30C245D0121009B0758 /* dep.png in Resources */,
 				7C8693B924566CA90042647B /* Assets.xcassets in Resources */,
 				7C8693B424566CA40042647B /* Main.storyboard in Resources */,
 			);
