@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 
-class moodEntry: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class moodEntry: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, ViewControllerBDelegate {
     
     
     override func viewDidLoad() {
@@ -19,25 +19,22 @@ class moodEntry: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate 
         // Do any additional setup after loading the view.
     }
 
-     //graph
-    
+     //anaysis
+
        
 
-    @IBOutlet var textField: UITextField!
     //slider
       @IBOutlet var slider:UISlider!
       var currentValue: Int = 50
       @IBOutlet var reminders: UITextField!
-        var happyface2: UIImage!
-        var happyface1: UIImage!
-    //picker variables
+
         var weekArray:[String] = ["Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
         var curDay: String?
     //slider variables
     @IBOutlet var outputMoodScale: UILabel!
 
     
-    
+
     
 //protocol for picker view;
       func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
@@ -61,9 +58,8 @@ class moodEntry: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate 
          //protocol for delegate
          func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
             return String(weekArray[row])
-            var pickedDay = String(weekArray[row])
-            weekItems.append(pickedDay)
-            
+            let pickedDay = String(weekArray[row])
+        
          }
     
     
@@ -86,22 +82,25 @@ class moodEntry: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate 
         
     }
     
-        var listItems = sampleData.generateListData()
-        
-        
-        // MARK:
-
-        
-        @IBAction func saveItemDetail(_ segue: UIStoryboardSegue) {
-            guard let detailsViewController = segue.source as?
-                dteailsViewController, let listitem = detailsViewController.listitem else {
-                    return
-            }
-                listItems.append(listitem)
+    //analysis
+    @IBOutlet weak var textField: UITextField!
+           
+       override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+           if let viewControllerB = segue.destination as? AnaysisViewController {
+               viewControllerB.text = textField.text
+               viewControllerB.delegate = self
+           }
+       }
+       
+       func textChanged(text: String?) {
+           textField.text = text
+       }
+    
+    
     //
     //        let indexPath = IndexPath(row: listItems.count - 1, section: 0)
     //        tableView.insertRows(at: [indexPath], with: .automatic)
         }
 
 
-}
+

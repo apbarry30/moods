@@ -106,9 +106,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
-                                    <action selector="enter:" destination="9pv-A4-QxB" eventType="touchUpInside" id="mqG-TS-zJB"/>
-                                    <action selector="enter:" destination="W5J-7L-Pyd" eventType="touchUpInside" id="waq-4W-E9e"/>
-                                    <segue destination="8rJ-Kc-sve" kind="custom" identifier="segue" id="ho9-fG-frw"/>
+                                    <action selector="uppercasePressed:" destination="W5J-7L-Pyd" eventType="touchUpInside" id="mh6-H1-k5S"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPY-IY-hob">
@@ -128,6 +126,7 @@
                         <outlet property="outputMoodScale" destination="sjb-iB-r7y" id="xpO-Nh-X7o"/>
                         <outlet property="reminders" destination="KCQ-4s-jfW" id="YVV-jJ-f9A"/>
                         <outlet property="slider" destination="2Gh-ua-4eP" id="LJF-1g-zIR"/>
+                        <outlet property="textField" destination="KCQ-4s-jfW" id="yUw-Xv-kDf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -137,18 +136,11 @@
         <!--Mood Analysis-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="BarChartViewController" customModule="mood" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="AnaysisViewController" customModule="mood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gp-zp-Mlb">
-                                <rect key="frame" x="78" y="205" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Week" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DU7-jk-dKz">
                                 <rect key="frame" x="166" y="98" width="82" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -179,13 +171,20 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gp-zp-Mlb">
+                                <rect key="frame" x="78" y="205" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Mood Analysis" id="Sgb-xL-PMJ"/>
                     <connections>
-                        <outlet property="label" destination="2gp-zp-Mlb" id="mMP-5f-JJ9"/>
+                        <outlet property="input" destination="2gp-zp-Mlb" id="AgY-RJ-mna"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
@@ -383,9 +382,6 @@
             <point key="canvasLocation" x="744.92753623188412" y="1725.6696428571429"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="ho9-fG-frw"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="chart.bar.fill" catalog="system" width="128" height="89"/>
         <image name="message.fill" catalog="system" width="128" height="113"/>
