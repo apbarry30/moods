@@ -16,7 +16,25 @@ class moodEntry: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-   
+    
   @IBOutlet var reminders: UITextField!
-
+    
+    //vars for passing face
+    var face:String?
+    var moodFace:String?
+    
+    //setting face for each button
+    @IBAction func madPressed(){
+        face="mad.png"
+    }
+    @IBAction func happy1Pressed(){
+        face="happy1.png"
+    }
+    
+    //saving data to UserDefault
+    @IBAction func submit(){
+        if var moodFace=face{
+            UserDefaults.standard.set(moodFace, forKey: "moodFace")
+        }
+    }
 }

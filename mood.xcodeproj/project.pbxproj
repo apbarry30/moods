@@ -14,6 +14,7 @@
 		7C6076FC245BD8E500E82584 /* happy2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6076FB245BD8E500E82584 /* happy2.png */; };
 		7C6076FE245BD8E800E82584 /* happy1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6076FD245BD8E800E82584 /* happy1.png */; };
 		7C607700245BD8EB00E82584 /* meh2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6076FF245BD8EB00E82584 /* meh2.png */; };
+		7C640918245F5A96007B996B /* moodAnalysisFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C640917245F5A96007B996B /* moodAnalysisFace.swift */; };
 		7C8693AB24566CA40042647B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8693AA24566CA40042647B /* AppDelegate.swift */; };
 		7C8693AD24566CA40042647B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8693AC24566CA40042647B /* SceneDelegate.swift */; };
 		7C8693AF24566CA40042647B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8693AE24566CA40042647B /* FirstViewController.swift */; };
@@ -31,6 +32,7 @@
 		7C6076FB245BD8E500E82584 /* happy2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happy2.png; sourceTree = "<group>"; };
 		7C6076FD245BD8E800E82584 /* happy1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happy1.png; sourceTree = "<group>"; };
 		7C6076FF245BD8EB00E82584 /* meh2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meh2.png; sourceTree = "<group>"; };
+		7C640917245F5A96007B996B /* moodAnalysisFace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moodAnalysisFace.swift; sourceTree = "<group>"; };
 		7C8693A724566CA40042647B /* mood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C8693AA24566CA40042647B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C8693AC24566CA40042647B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				7C8693AC24566CA40042647B /* SceneDelegate.swift */,
 				7C8693AE24566CA40042647B /* FirstViewController.swift */,
 				243EBE1C24577550003E5D62 /* moodEntry.swift */,
+				7C640917245F5A96007B996B /* moodAnalysisFace.swift */,
 				7C8693B224566CA40042647B /* Main.storyboard */,
 				7C8693B824566CA90042647B /* Assets.xcassets */,
 				7C8693BA24566CA90042647B /* LaunchScreen.storyboard */,
@@ -171,6 +174,7 @@
 				7C8693B724566CA40042647B /* mood.xcdatamodeld in Sources */,
 				7C8693AF24566CA40042647B /* FirstViewController.swift in Sources */,
 				7C8693AB24566CA40042647B /* AppDelegate.swift in Sources */,
+				7C640918245F5A96007B996B /* moodAnalysisFace.swift in Sources */,
 				7C8693AD24566CA40042647B /* SceneDelegate.swift in Sources */,
 				243EBE1D24577550003E5D62 /* moodEntry.swift in Sources */,
 			);
