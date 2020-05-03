@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 
-class moodEntry: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, ViewControllerBDelegate {
+class moodEntry: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
     
     override func viewDidLoad() {
@@ -21,12 +21,11 @@ class moodEntry: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate,
 
      //anaysis
 
-       
+
 
     //slider
       @IBOutlet var slider:UISlider!
       var currentValue: Int = 50
-      @IBOutlet var reminders: UITextField!
 
         var weekArray:[String] = ["Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
         var curDay: String?
@@ -58,7 +57,8 @@ class moodEntry: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate,
          //protocol for delegate
          func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
             return String(weekArray[row])
-            let pickedDay = String(weekArray[row])
+            var pickedDay = String(weekArray[row])
+            print(pickedDay)
         
          }
     
@@ -83,24 +83,23 @@ class moodEntry: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate,
     }
     
     //analysis
-    @IBOutlet weak var textField: UITextField!
            
-       override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-           if let viewControllerB = segue.destination as? AnaysisViewController {
-               viewControllerB.text = textField.text
-               viewControllerB.delegate = self
-           }
-       }
-       
-       func textChanged(text: String?) {
-           textField.text = text
+    @IBOutlet var reminders: UITextField!
+
+    @IBAction func continuepressed(){
+        if let name = reminders.text{
+            UserDefaults.standard.set(name,forKey:"name")
+        }
+    }
+    
+
        }
     
     
     //
     //        let indexPath = IndexPath(row: listItems.count - 1, section: 0)
     //        tableView.insertRows(at: [indexPath], with: .automatic)
-        }
+        
 
 
 

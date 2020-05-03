@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		243A8CB3245F441200189EB5 /* AnaysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243A8CB1245F441200189EB5 /* AnaysisViewController.swift */; };
 		243EBE1D24577550003E5D62 /* moodEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243EBE1C24577550003E5D62 /* moodEntry.swift */; };
+		24BEED5B245F5B9600DE03C9 /* moodAnaysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BEED5A245F5B9600DE03C9 /* moodAnaysis.swift */; };
 		7C8693AB24566CA40042647B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8693AA24566CA40042647B /* AppDelegate.swift */; };
 		7C8693AD24566CA40042647B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8693AC24566CA40042647B /* SceneDelegate.swift */; };
 		7C8693B424566CA40042647B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C8693B224566CA40042647B /* Main.storyboard */; };
@@ -18,8 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		243A8CB1245F441200189EB5 /* AnaysisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnaysisViewController.swift; sourceTree = "<group>"; };
 		243EBE1C24577550003E5D62 /* moodEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moodEntry.swift; sourceTree = "<group>"; };
+		24BEED5A245F5B9600DE03C9 /* moodAnaysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moodAnaysis.swift; sourceTree = "<group>"; };
 		7C8693A724566CA40042647B /* mood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C8693AA24566CA40042647B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C8693AC24566CA40042647B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,7 +63,7 @@
 				7C8693AA24566CA40042647B /* AppDelegate.swift */,
 				7C8693AC24566CA40042647B /* SceneDelegate.swift */,
 				243EBE1C24577550003E5D62 /* moodEntry.swift */,
-				243A8CB1245F441200189EB5 /* AnaysisViewController.swift */,
+				24BEED5A245F5B9600DE03C9 /* moodAnaysis.swift */,
 				7C8693B224566CA40042647B /* Main.storyboard */,
 				7C8693B824566CA90042647B /* Assets.xcassets */,
 				7C8693BA24566CA90042647B /* LaunchScreen.storyboard */,
@@ -144,11 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24BEED5B245F5B9600DE03C9 /* moodAnaysis.swift in Sources */,
 				7C8693B724566CA40042647B /* mood.xcdatamodeld in Sources */,
 				7C8693AB24566CA40042647B /* AppDelegate.swift in Sources */,
 				7C8693AD24566CA40042647B /* SceneDelegate.swift in Sources */,
 				243EBE1D24577550003E5D62 /* moodEntry.swift in Sources */,
-				243A8CB3245F441200189EB5 /* AnaysisViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
