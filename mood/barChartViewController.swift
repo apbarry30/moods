@@ -9,17 +9,18 @@
 import UIKit
 
 class BarChartViewController: UIViewController {
-    
+    var barHeight = 0.0
+
     var myString = String()
     public var myDoube = Int()
         
     @IBOutlet var label: UILabel!
-    @IBOutlet var barChartView:BarChartView!
+    @IBOutlet var barChartView: BarChartView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         barChartView.barHeight = Double(myDoube)
-        print(barChartView.barHeight)
+        
     }
     
     

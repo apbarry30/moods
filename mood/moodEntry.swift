@@ -61,6 +61,8 @@ class moodEntry: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate 
          //protocol for delegate
          func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
             return String(weekArray[row])
+            var pickedDay = String(weekArray[row])
+            weekItems.append(pickedDay)
             
          }
     
@@ -70,25 +72,36 @@ class moodEntry: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate 
         currentValue = lroundf(slider.value)
         print("the value of the slider is now: \(slider.value)")
         outputMoodScale.text = String(currentValue)
+        moodNumber.append(currentValue)
+        
+    }
+
+    var weekItems:[String] = [""]
+    var moodNumber:[Int] = []
+      //reset when done
+
+    @IBAction func reset(){
+                     print(moodNumber)
+            print(weekItems)
         
     }
     
-      //reset when done
+        var listItems = sampleData.generateListData()
+        
+        
+        // MARK:
 
-   
-    @IBAction func enter(_ segue: UIStoryboardSegue) {
-            currentValue = lroundf(slider.value)
-            print(currentValue)
-            performSegue(withIdentifier: "segue", sender: self)
+        
+        @IBAction func saveItemDetail(_ segue: UIStoryboardSegue) {
+            guard let detailsViewController = segue.source as?
+                dteailsViewController, let listitem = detailsViewController.listitem else {
+                    return
+            }
+                listItems.append(listitem)
+    //
+    //        let indexPath = IndexPath(row: listItems.count - 1, section: 0)
+    //        tableView.insertRows(at: [indexPath], with: .automatic)
         }
-    
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        let barController = segue.destination as! BarChartViewController
-        barController.myDoube = currentValue
-        print(currentValue)
-//        barController.myString = textField.text ?? "enter a value"
-       }
 
 
 }
