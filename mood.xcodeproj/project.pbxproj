@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24467848245F658900F0F7E0 /* moodEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24467847245F658900F0F7E0 /* moodEntryViewController.swift */; };
+		2446784A245F674600F0F7E0 /* AnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24467849245F674600F0F7E0 /* AnalysisViewController.swift */; };
 		7C0577F5245BC98200E4B95F /* community.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0577F4245BC98200E4B95F /* community.swift */; };
 		7C8693AB24566CA40042647B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8693AA24566CA40042647B /* AppDelegate.swift */; };
 		7C8693AD24566CA40042647B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8693AC24566CA40042647B /* SceneDelegate.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24467847245F658900F0F7E0 /* moodEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moodEntryViewController.swift; sourceTree = "<group>"; };
+		24467849245F674600F0F7E0 /* AnalysisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisViewController.swift; sourceTree = "<group>"; };
 		7C0577F4245BC98200E4B95F /* community.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = community.swift; sourceTree = "<group>"; };
 		7C8693A724566CA40042647B /* mood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C8693AA24566CA40042647B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +69,8 @@
 				7C8693AE24566CA40042647B /* FirstViewController.swift */,
 				7C0577F4245BC98200E4B95F /* community.swift */,
 				7C8693B224566CA40042647B /* Main.storyboard */,
+				24467849245F674600F0F7E0 /* AnalysisViewController.swift */,
+				24467847245F658900F0F7E0 /* moodEntryViewController.swift */,
 				7C8693B824566CA90042647B /* Assets.xcassets */,
 				7C8693BA24566CA90042647B /* LaunchScreen.storyboard */,
 				7C8693BD24566CA90042647B /* Info.plist */,
@@ -146,6 +152,8 @@
 			files = (
 				7C8693B724566CA40042647B /* mood.xcdatamodeld in Sources */,
 				7C0577F5245BC98200E4B95F /* community.swift in Sources */,
+				24467848245F658900F0F7E0 /* moodEntryViewController.swift in Sources */,
+				2446784A245F674600F0F7E0 /* AnalysisViewController.swift in Sources */,
 				7C8693AF24566CA40042647B /* FirstViewController.swift in Sources */,
 				7C8693AB24566CA40042647B /* AppDelegate.swift in Sources */,
 				7C8693AD24566CA40042647B /* SceneDelegate.swift in Sources */,
