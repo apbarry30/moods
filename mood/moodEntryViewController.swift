@@ -91,7 +91,7 @@ class moodEntryViewController: UIViewController, UIPickerViewDataSource, UIPicke
         var moodNumberNum:[Int] = [0]
           //reset when done
 
-        @IBAction func reset(){
+     /*   @IBAction func reset(){
             outputMoodScale.text = "50"
             slider.value = 50
             reminders.text = " "
@@ -102,7 +102,7 @@ class moodEntryViewController: UIViewController, UIPickerViewDataSource, UIPicke
             
 
         }
-        
+        */
     func calculateMean(array: [Int]) -> Double {
         
         // Calculate sum ot items with reduce function

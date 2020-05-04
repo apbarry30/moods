@@ -193,11 +193,13 @@ class AnalysisViewController: UIViewController {
                den=den+1
            }
         
-        
+        if(den==0){
+            den=den+1
             avg=num/den
         average.text=String(avg)
-        
-        
+        }
+        avg=num/den
+               average.text=String(avg)
         
     }
     
