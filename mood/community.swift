@@ -16,7 +16,7 @@ class community: UIViewController {
     @IBOutlet weak var responseBubble:UILabel!
     @IBOutlet weak var warningLabel:UILabel!
     @IBOutlet weak var typing:UILabel!
-    @IBOutlet weak var sendB:UIButton!
+  //  @IBOutlet weak var sendB:UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()

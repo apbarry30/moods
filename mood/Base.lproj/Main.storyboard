@@ -26,21 +26,33 @@
                                 <rect key="frame" x="70" y="433" width="98" height="98"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="happy1.png"/>
+                                <connections>
+                                    <action selector="happy" destination="9pv-A4-QxB" eventType="touchUpInside" id="djT-nn-vED"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvm-Vt-zcx">
                                 <rect key="frame" x="246" y="433" width="99" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="happy2.png"/>
+                                <connections>
+                                    <action selector="happy2" destination="9pv-A4-QxB" eventType="touchUpInside" id="aZc-yf-iaL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLn-rH-gwE">
                                 <rect key="frame" x="71" y="644" width="98" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="sad.png"/>
+                                <connections>
+                                    <action selector="sad" destination="9pv-A4-QxB" eventType="touchUpInside" id="ZeO-AC-Lnf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ec4-h5-gct">
                                 <rect key="frame" x="247" y="645" width="99" height="98"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="mad.png"/>
+                                <connections>
+                                    <action selector="mad" destination="9pv-A4-QxB" eventType="touchUpInside" id="ZUY-wI-rmZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Suv-6e-WiY">
                                 <rect key="frame" x="165" y="768" width="85" height="34"/>
@@ -59,11 +71,17 @@
                                 <rect key="frame" x="69" y="539" width="98" height="98"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="meh1.png"/>
+                                <connections>
+                                    <action selector="meh1" destination="9pv-A4-QxB" eventType="touchUpInside" id="yZd-tQ-NHK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zty-Bu-kCU">
                                 <rect key="frame" x="245" y="539" width="100" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="meh2.png"/>
+                                <connections>
+                                    <action selector="meh2" destination="9pv-A4-QxB" eventType="touchUpInside" id="783-de-5d2"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Day of the Week" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Im7-nw-hXK">
                                 <rect key="frame" x="123" y="105" width="188" height="41"/>
@@ -302,12 +320,54 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tdx-26-DXz">
+                                <rect key="frame" x="239" y="184" width="61" height="43"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cP1-g2-Tbo">
+                                <rect key="frame" x="239" y="261" width="61" height="43"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KOi-Bb-5Em">
+                                <rect key="frame" x="239" y="492" width="61" height="43"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NzK-Pd-qKb">
+                                <rect key="frame" x="239" y="336" width="61" height="45"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="happy2.png" translatesAutoresizingMaskIntoConstraints="NO" id="3Dx-sm-lGq">
+                                <rect key="frame" x="239" y="569" width="61" height="43"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YJu-C6-gLO">
+                                <rect key="frame" x="239" y="646" width="61" height="43"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aG7-5d-jY9">
+                                <rect key="frame" x="239" y="415" width="61" height="43"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.97184878590000001" blue="0.21621048449999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aG7-5d-jY9" firstAttribute="trailing" secondItem="tdx-26-DXz" secondAttribute="trailing" id="3gr-ZR-EpG"/>
+                            <constraint firstItem="3Dx-sm-lGq" firstAttribute="centerX" secondItem="tdx-26-DXz" secondAttribute="centerX" id="7AE-uB-K0z"/>
+                            <constraint firstItem="NzK-Pd-qKb" firstAttribute="trailing" secondItem="tdx-26-DXz" secondAttribute="trailing" id="IcW-4g-bee"/>
+                            <constraint firstItem="KOi-Bb-5Em" firstAttribute="trailing" secondItem="tdx-26-DXz" secondAttribute="trailing" id="Iub-bp-Fqv"/>
+                            <constraint firstItem="aG7-5d-jY9" firstAttribute="centerX" secondItem="tdx-26-DXz" secondAttribute="centerX" id="LrC-cy-edB"/>
+                            <constraint firstItem="3Dx-sm-lGq" firstAttribute="trailing" secondItem="tdx-26-DXz" secondAttribute="trailing" id="RbW-Uo-PVx"/>
+                            <constraint firstItem="KOi-Bb-5Em" firstAttribute="centerX" secondItem="tdx-26-DXz" secondAttribute="centerX" id="Y5I-2I-gqW"/>
+                            <constraint firstItem="cP1-g2-Tbo" firstAttribute="trailing" secondItem="tdx-26-DXz" secondAttribute="trailing" id="gHD-KV-rU7"/>
+                            <constraint firstItem="cP1-g2-Tbo" firstAttribute="centerX" secondItem="tdx-26-DXz" secondAttribute="centerX" id="jwT-KN-pFG"/>
+                            <constraint firstItem="NzK-Pd-qKb" firstAttribute="centerX" secondItem="tdx-26-DXz" secondAttribute="centerX" id="rkD-hn-mtS"/>
+                            <constraint firstItem="YJu-C6-gLO" firstAttribute="trailing" secondItem="tdx-26-DXz" secondAttribute="trailing" id="vhA-Kc-OZm"/>
+                            <constraint firstItem="YJu-C6-gLO" firstAttribute="centerX" secondItem="tdx-26-DXz" secondAttribute="centerX" id="xd5-2e-VOw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Mood Analysis" id="Sgb-xL-PMJ"/>
                     <connections>
+                        <outlet property="Fpic" destination="3Dx-sm-lGq" id="hbI-C3-QVj"/>
+                        <outlet property="Mpic" destination="cP1-g2-Tbo" id="Jyu-aj-YJj"/>
+                        <outlet property="Spic" destination="YJu-C6-gLO" id="IzM-nW-Zkb"/>
+                        <outlet property="Supic" destination="tdx-26-DXz" id="Hff-0U-9bR"/>
+                        <outlet property="Thpic" destination="KOi-Bb-5Em" id="lsU-uU-jGj"/>
+                        <outlet property="Tpic" destination="NzK-Pd-qKb" id="Njm-8m-nby"/>
+                        <outlet property="Wpic" destination="aG7-5d-jY9" id="qyq-GV-kye"/>
                         <outlet property="average" destination="cq9-Sv-nKr" id="88J-Yf-tJf"/>
                         <outlet property="friday" destination="WXM-an-5iW" id="yNT-BG-AQ9"/>
                         <outlet property="fridayDay" destination="Wkk-dX-Eky" id="Lkm-hI-Rwz"/>

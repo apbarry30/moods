@@ -53,8 +53,14 @@ class AnalysisViewController: UIViewController {
     var den=0
     var avg=0
     
-    
-    
+    @IBOutlet var Supic:UIImageView?
+    @IBOutlet var Mpic:UIImageView?
+    @IBOutlet var Tpic:UIImageView?
+    @IBOutlet var Wpic:UIImageView?
+    @IBOutlet var Thpic:UIImageView?
+    @IBOutlet var Fpic:UIImageView?
+    @IBOutlet var Spic:UIImageView?
+ 
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -84,39 +90,69 @@ class AnalysisViewController: UIViewController {
         
         let SumoodDay = UserDefaults.standard.string(forKey:"Sumood")
         let SumoodScale = UserDefaults.standard.string(forKey:"Sunumber")
+        let SumoodFace = UserDefaults.standard.string(forKey:"Suface")
         if (SumoodDay == "Sunday"){
                 sundayDay.text = "Entry for \(SumoodDay ?? "")"
-                sunday.text = "My Mood Score is: \(SumoodScale ?? "")"}
+                sunday.text = "My Mood Score is: \(SumoodScale ?? "")"
+            Supic!.image=UIImage(named:SumoodFace ?? "w.png")
+        }
+       
         let MmoodDay = UserDefaults.standard.string(forKey:"Mmood")
         let MmoodScale = UserDefaults.standard.string(forKey:"Mnumber")
+        let MmoodFace = UserDefaults.standard.string(forKey:"Mface")
         if (MmoodDay == "Monday"){
                 mondayDay.text = "Entry for \(MmoodDay ?? "")"
-                monday.text = "My Mood Score is: \(MmoodScale ?? "")"}
+                monday.text = "My Mood Score is: \(MmoodScale ?? "")"
+            Mpic!.image=UIImage(named:MmoodFace ?? "w.png")
+        }
+    
         let TmoodDay = UserDefaults.standard.string(forKey:"Tmood")
         let TmoodScale = UserDefaults.standard.string(forKey:"Tnumber")
+        let TmoodFace = UserDefaults.standard.string(forKey:"Tface")
         if (TmoodDay == "Tuesday"){
                 tuesdayDay.text = "Entry for \(TmoodDay ?? "")"
-                tuesday.text = "My Mood Score is: \(TmoodScale ?? "")"}
+                tuesday.text = "My Mood Score is: \(TmoodScale ?? "")"
+            Tpic!.image=UIImage(named:TmoodFace ?? "w.png")
+        }
+        
         let WmoodDay = UserDefaults.standard.string(forKey:"Wmood")
         let WmoodScale = UserDefaults.standard.string(forKey:"Wnumber")
+        let WmoodFace = UserDefaults.standard.string(forKey:"Wface")
         if (WmoodDay == "Wednesday"){
                 wednesdayDay.text = "Entry for \(WmoodDay ?? "")"
-                wednesday.text = "My Mood Score is: \(WmoodScale ?? "")"}
+                wednesday.text = "My Mood Score is: \(WmoodScale ?? "")"
+            Wpic?.image=UIImage(named:WmoodFace ?? "w.png")
+        }
         let ThmoodDay = UserDefaults.standard.string(forKey:"Thmood")
         let ThmoodScale = UserDefaults.standard.string(forKey:"Thnumber")
+        let ThmoodFace = UserDefaults.standard.string(forKey:"Thface")
         if (ThmoodDay == "Thursday"){
                 thursdayDay.text = "Entry for \(ThmoodDay ?? "")"
-                thursday.text = "My Mood Score is: \(ThmoodScale ?? "")"}
+                thursday.text = "My Mood Score is: \(ThmoodScale ?? "")"
+            Thpic?.image=UIImage(named:ThmoodFace ?? "w.png")
+        }
         let FmoodDay = UserDefaults.standard.string(forKey:"Fmood")
         let FmoodScale = UserDefaults.standard.string(forKey:"Fnumber")
+         let FmoodFace = UserDefaults.standard.string(forKey:"Fface")
         if (FmoodDay == "Friday"){
                 fridayDay.text = "Entry for \(FmoodDay ?? "")"
-                friday.text = "My Mood Score is: \(FmoodScale ?? "")"}
+                friday.text = "My Mood Score is: \(FmoodScale ?? "")"
+            Fpic?.image=UIImage(named:FmoodFace ?? "w.png")
+        }
         let SmoodDay = UserDefaults.standard.string(forKey:"Smood")
         let SmoodScale = UserDefaults.standard.string(forKey:"Snumber")
+         let SmoodFace = UserDefaults.standard.string(forKey:"Sface")
         if (SmoodDay == "Saturday"){
                 saturdayDay.text = "Entry for \(SmoodDay ?? "")"
-                saturday.text = "My Mood Score is: \(SmoodScale ?? "")"}
+                saturday.text = "My Mood Score is: \(SmoodScale ?? "")"
+            Spic?.image=UIImage(named:SmoodFace ?? "w.png")
+        }
+        
+        
+        
+        
+        
+        
         
         
         

@@ -34,6 +34,8 @@
 		7CCC64D124603C83007F0442 /* nyt.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCC64D024603C83007F0442 /* nyt.png */; };
 		7CCC64D324603C86007F0442 /* moodballs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7CCC64D224603C86007F0442 /* moodballs.jpg */; };
 		7CCC64D524603C89007F0442 /* Lost.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCC64D424603C89007F0442 /* Lost.png */; };
+		7CCC64D72460579C007F0442 /* Screen Shot 2020-05-02 at 3.44.37 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCC64D62460579C007F0442 /* Screen Shot 2020-05-02 at 3.44.37 PM.png */; };
+		7CCC64D9246057DF007F0442 /* w.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCC64D8246057DF007F0442 /* w.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +68,8 @@
 		7CCC64D024603C83007F0442 /* nyt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nyt.png; sourceTree = "<group>"; };
 		7CCC64D224603C86007F0442 /* moodballs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = moodballs.jpg; sourceTree = "<group>"; };
 		7CCC64D424603C89007F0442 /* Lost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lost.png; sourceTree = "<group>"; };
+		7CCC64D62460579C007F0442 /* Screen Shot 2020-05-02 at 3.44.37 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2020-05-02 at 3.44.37 PM.png"; sourceTree = "<group>"; };
+		7CCC64D8246057DF007F0442 /* w.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = w.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +107,10 @@
 				7C8693AE24566CA40042647B /* FirstViewController.swift */,
 				7C0577F4245BC98200E4B95F /* community.swift */,
 				7C8693B224566CA40042647B /* Main.storyboard */,
+				7CCC64D62460579C007F0442 /* Screen Shot 2020-05-02 at 3.44.37 PM.png */,
 				7CCC64B42460382D007F0442 /* happy1.png */,
 				7CCC64B62460387A007F0442 /* happy2.png */,
+				7CCC64D8246057DF007F0442 /* w.png */,
 				7CCC64BC2460388E007F0442 /* sad.png */,
 				7CCC64BE24603895007F0442 /* mad.png */,
 				7CCC64B824603882007F0442 /* meh1.png */,
@@ -199,6 +205,7 @@
 				7CCC64C324603C67007F0442 /* covid.png in Resources */,
 				7CCC64B924603882007F0442 /* meh1.png in Resources */,
 				7CCC64CD24603C7D007F0442 /* fall.png in Resources */,
+				7CCC64D9246057DF007F0442 /* w.png in Resources */,
 				7CCC64D324603C86007F0442 /* moodballs.jpg in Resources */,
 				7CCC64C524603C6B007F0442 /* good.png in Resources */,
 				7CCC64CF24603C80007F0442 /* godnews.png in Resources */,
@@ -207,6 +214,7 @@
 				7CCC64D124603C83007F0442 /* nyt.png in Resources */,
 				7CCC64D524603C89007F0442 /* Lost.png in Resources */,
 				7CCC64B52460382D007F0442 /* happy1.png in Resources */,
+				7CCC64D72460579C007F0442 /* Screen Shot 2020-05-02 at 3.44.37 PM.png in Resources */,
 				7C8693B424566CA40042647B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
