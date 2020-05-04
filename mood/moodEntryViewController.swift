@@ -18,6 +18,11 @@ class moodEntryViewController: UIViewController, UIPickerViewDataSource, UIPicke
         //slider variables
      @IBOutlet var outputMoodScale: UILabel!
      var curMood: String?
+    
+    //calc
+    @IBOutlet var calc: UILabel!
+    var meanString: String?
+
 
         
  @IBOutlet var picker: UIPickerView!
@@ -25,7 +30,7 @@ class moodEntryViewController: UIViewController, UIPickerViewDataSource, UIPicke
     //protocol for picker view;
           func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
                  if (component == 0){
-                    curDay = weekArray[row]
+                    curDay = String(weekArray[row])
                     print(curDay!)
                     //user just selected their day of the week
                  }
@@ -43,7 +48,7 @@ class moodEntryViewController: UIViewController, UIPickerViewDataSource, UIPicke
              
              //protocol for delegate
              func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-                weekItems.append(String(weekArray[row]))
+//                weekItems.append(String(weekArray[row]))
                 return String(weekArray[row])
              }
         
@@ -53,14 +58,17 @@ class moodEntryViewController: UIViewController, UIPickerViewDataSource, UIPicke
             currentValue = lroundf(slider.value)
             print("the value of the slider is now: \(slider.value)")
             curMood = String(currentValue)
-            moodNumbers.append(curMood ?? "0")
+            moodNumberNum.append(currentValue)
+//            moodNumbers.append(curMood ?? "0")
             outputMoodScale.text = String(currentValue)
 //            moodNumber.append(currentValue)
             
         }
 //anaysis
-        var weekItems:[String] = []
-        var moodNumbers:[String] = []
+        var weekItems:[String] = [""]
+        
+        var moodNumbers:[String] = ["0"]
+    var moodNumberNum:[Int] = [0]
           //reset when done
 
         @IBAction func reset(){
@@ -71,14 +79,33 @@ class moodEntryViewController: UIViewController, UIPickerViewDataSource, UIPicke
                 print(moodNumbers)
                 print(weekItems)
                 print(curMood)
+            print(currentValue)
+            
+
         }
         
+    func calculateMean(array: [Int]) -> Double {
+        
+        // Calculate sum ot items with reduce function
+        let sum = moodNumberNum.reduce(0, { a, b in
+            return a + b
+        })
+        
+        let mean = Double(sum) / Double(array.count)
+        print(mean)
+        meanString = String(calculateMean(array: moodNumberNum))
+        return Double(mean)
+    }
+    
         //analysis
                
         @IBOutlet var reminders: UITextField!
 
         @IBAction func continuepressed(){
-            if let name = reminders.text{
+            weekItems.append(curDay!)
+                      
+            moodNumbers.append(curMood!)
+            if let name = curMood {
                 UserDefaults.standard.set(name,forKey:"name")
             }
             if let moodDay = curDay {
@@ -87,15 +114,25 @@ class moodEntryViewController: UIViewController, UIPickerViewDataSource, UIPicke
             if let feelScale = curMood {
                 UserDefaults.standard.set(feelScale,forKey:"number")
             }
+            
+            if let StringAverage =  meanString {
+                UserDefaults.standard.set(StringAverage,forKey:"mean")
+            }
+            
+            print(calculateMean(array: moodNumberNum))
+        }
+            override func viewDidLoad() {
+                super.viewDidLoad()
+
+                // Do any additional setup after loading the view.
+            }
+            
+ 
+    
         }
         
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
-    
 
     /*
     // MARK: - Navigation
@@ -107,4 +144,4 @@ class moodEntryViewController: UIViewController, UIPickerViewDataSource, UIPicke
     }
     */
 
-}
+

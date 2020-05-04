@@ -12,6 +12,8 @@ class AnalysisViewController: UIViewController {
     @IBOutlet var reminderLabel:UITextView!
     @IBOutlet var dayofWeek: UITextView!
     @IBOutlet var feelingScale: UILabel!
+    @IBOutlet var meanLabel: UILabel!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +29,9 @@ class AnalysisViewController: UIViewController {
         if let moodScale = UserDefaults.standard.string(forKey:"number") {
                    feelingScale.text = "My Mood Score is: \(moodScale)"
                       }
+        if let moodmean = UserDefaults.standard.string(forKey:"mean") {
+        feelingScale.text = "Your Average Mood is: \(moodmean)"
+           }
         // Do any additional setup after loading the view.
     }
     
