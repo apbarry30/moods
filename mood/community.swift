@@ -16,6 +16,7 @@ class community: UIViewController {
     @IBOutlet weak var responseBubble:UILabel!
     @IBOutlet weak var warningLabel:UILabel!
     @IBOutlet weak var typing:UILabel!
+    @IBOutlet weak var sendB:UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,11 +25,19 @@ class community: UIViewController {
         self.view.addGestureRecognizer(tapGesture)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+        
+        
+        
     }
   /*  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
           view.endEditing(true)
           super.touchesBegan(touches, with: event)
       }*/
+  //  func buttonTapped(){
+  //    messageText.resignFirstResponder()
+  //  }
+
+    
     @objc func dismissKeyboard(){
         messageText.resignFirstResponder()
     }
@@ -51,6 +60,7 @@ class community: UIViewController {
     
     
     @IBAction func sendMessage(){
+        messageText.resignFirstResponder()
         if (messageText.text != ""){
             let words=messageText.text
             UIView.animate(withDuration: 0.5, delay: 0.50, options: UIView.AnimationOptions.curveEaseOut, animations: {

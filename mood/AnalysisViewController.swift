@@ -35,16 +35,23 @@ class AnalysisViewController: UIViewController {
     @IBOutlet var saturday: UILabel!
     @IBOutlet var saturdayDay: UITextView!
 
-
+    @IBOutlet var average:UILabel!
     var days:[String] = [""]
     var Scale:[String] = [""]
     var reminders:[String] = [""]
     var curday: String?
-    
+   
     var MmoodDay=""
-    
-    
-    
+    var suInt:Int?
+    var MInt:Int?
+    var TInt:Int?
+    var WInt:Int?
+    var ThInt:Int?
+    var FInt:Int?
+    var SInt:Int?
+    var num=0
+    var den=0
+    var avg=0
     
     
     
@@ -74,7 +81,12 @@ class AnalysisViewController: UIViewController {
 //        feelingScale.text = "Your Average Mood is: \(moodmean)"
 //           }
         
-
+        
+        let SumoodDay = UserDefaults.standard.string(forKey:"Sumood")
+        let SumoodScale = UserDefaults.standard.string(forKey:"Sunumber")
+        if (SumoodDay == "Sunday"){
+                sundayDay.text = "Entry for \(SumoodDay ?? "")"
+                sunday.text = "My Mood Score is: \(SumoodScale ?? "")"}
         let MmoodDay = UserDefaults.standard.string(forKey:"Mmood")
         let MmoodScale = UserDefaults.standard.string(forKey:"Mnumber")
         if (MmoodDay == "Monday"){
@@ -85,7 +97,81 @@ class AnalysisViewController: UIViewController {
         if (TmoodDay == "Tuesday"){
                 tuesdayDay.text = "Entry for \(TmoodDay ?? "")"
                 tuesday.text = "My Mood Score is: \(TmoodScale ?? "")"}
-             
+        let WmoodDay = UserDefaults.standard.string(forKey:"Wmood")
+        let WmoodScale = UserDefaults.standard.string(forKey:"Wnumber")
+        if (WmoodDay == "Wednesday"){
+                wednesdayDay.text = "Entry for \(WmoodDay ?? "")"
+                wednesday.text = "My Mood Score is: \(WmoodScale ?? "")"}
+        let ThmoodDay = UserDefaults.standard.string(forKey:"Thmood")
+        let ThmoodScale = UserDefaults.standard.string(forKey:"Thnumber")
+        if (ThmoodDay == "Thursday"){
+                thursdayDay.text = "Entry for \(ThmoodDay ?? "")"
+                thursday.text = "My Mood Score is: \(ThmoodScale ?? "")"}
+        let FmoodDay = UserDefaults.standard.string(forKey:"Fmood")
+        let FmoodScale = UserDefaults.standard.string(forKey:"Fnumber")
+        if (FmoodDay == "Friday"){
+                fridayDay.text = "Entry for \(FmoodDay ?? "")"
+                friday.text = "My Mood Score is: \(FmoodScale ?? "")"}
+        let SmoodDay = UserDefaults.standard.string(forKey:"Smood")
+        let SmoodScale = UserDefaults.standard.string(forKey:"Snumber")
+        if (SmoodDay == "Saturday"){
+                saturdayDay.text = "Entry for \(SmoodDay ?? "")"
+                saturday.text = "My Mood Score is: \(SmoodScale ?? "")"}
+        
+        
+        
+        
+             if (SumoodScale != nil){
+                suInt=Int(SumoodScale!)
+                num=num+suInt!
+                den=den+1
+             }
+            if (MmoodScale != nil){
+                MInt=Int(MmoodScale!)
+                num=num+MInt!
+                den=den+1
+            }
+        if (TmoodScale != nil){
+            TInt=Int(TmoodScale!)
+            num=num+TInt!
+            den=den+1
+         }
+        if (WmoodScale != nil){
+            WInt=Int(WmoodScale!)
+            num=num+WInt!
+            den=den+1
+        }
+        if (ThmoodScale != nil){
+                   ThInt=Int(ThmoodScale!)
+                   num=num+ThInt!
+                   den=den+1
+               }
+           if (FmoodScale != nil){
+               FInt=Int(FmoodScale!)
+               num=num+FInt!
+               den=den+1
+            }
+           if (SmoodScale != nil){
+               SInt=Int(SmoodScale!)
+               num=num+SInt!
+               den=den+1
+           }
+        
+        
+            avg=num/den
+        average.text=String(avg)
+        
+        
+        
+    }
+    
+    
+     
+        
+        
+        
+        
+        
         
         
         
@@ -179,7 +265,7 @@ class AnalysisViewController: UIViewController {
 //            Saturday.text = "\(moodScale)"
 //                     }
         // Do any additional setup after loading the view.
-    }
+    
     
 
     /*

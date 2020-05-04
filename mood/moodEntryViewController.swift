@@ -119,11 +119,17 @@ class moodEntryViewController: UIViewController, UIPickerViewDataSource, UIPicke
         @IBOutlet var reminders: UITextField!
 
         @IBAction func continuepressed(){
-            weekItems.append(curDay!)
-            moodNumbers.append(curMood!)
+//            weekItems.append(curDay!)
+        //    moodNumbers.append(curMood!)
             
             
-            
+            if curDay=="Sunday"{
+                if let name = curMood {
+                UserDefaults.standard.set(name,forKey:"Suname")}
+                if let moodDay = curDay {
+                UserDefaults.standard.set(moodDay,forKey:"Sumood")}
+                if let feelScale = curMood {
+                UserDefaults.standard.set(feelScale,forKey:"Sunumber")}}
             if curDay=="Monday"{
                 if let name = curMood {
                 UserDefaults.standard.set(name,forKey:"Mname")}
@@ -138,7 +144,44 @@ class moodEntryViewController: UIViewController, UIPickerViewDataSource, UIPicke
                 UserDefaults.standard.set(moodDay,forKey:"Tmood")}
                 if let feelScale = curMood {
                 UserDefaults.standard.set(feelScale,forKey:"Tnumber")}}
+            if curDay=="Wednesday"{
+                if let name = curMood {
+                UserDefaults.standard.set(name,forKey:"Wname")}
+                if let moodDay = curDay {
+                UserDefaults.standard.set(moodDay,forKey:"Wmood")}
+                if let feelScale = curMood {
+                UserDefaults.standard.set(feelScale,forKey:"Wnumber")}}
+            if curDay=="Thursday"{
+                if let name = curMood {
+                UserDefaults.standard.set(name,forKey:"Thname")}
+                if let moodDay = curDay {
+                UserDefaults.standard.set(moodDay,forKey:"Thmood")}
+                if let feelScale = curMood {
+                UserDefaults.standard.set(feelScale,forKey:"Thnumber")}}
+            if curDay=="Friday"{
+                if let name = curMood {
+                UserDefaults.standard.set(name,forKey:"Fname")}
+                if let moodDay = curDay {
+                UserDefaults.standard.set(moodDay,forKey:"Fmood")}
+                if let feelScale = curMood {
+                UserDefaults.standard.set(feelScale,forKey:"Fnumber")}}
+            if curDay=="Saturday"{
+                if let name = curMood {
+                UserDefaults.standard.set(name,forKey:"Sname")}
+                if let moodDay = curDay {
+                UserDefaults.standard.set(moodDay,forKey:"Smood")}
+                if let feelScale = curMood {
+                UserDefaults.standard.set(feelScale,forKey:"Snumber")}}
 
+
+
+            
+            
+            
+            
+            
+            
+            
             
     /*
             if curMood != nil {

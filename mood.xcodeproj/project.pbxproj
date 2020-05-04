@@ -23,6 +23,17 @@
 		7CCC64BB24603888007F0442 /* meh2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCC64BA24603887007F0442 /* meh2.png */; };
 		7CCC64BD2460388E007F0442 /* sad.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCC64BC2460388E007F0442 /* sad.png */; };
 		7CCC64BF24603895007F0442 /* mad.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCC64BE24603895007F0442 /* mad.png */; };
+		7CCC64C124603C63007F0442 /* anxiety.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCC64C024603C63007F0442 /* anxiety.png */; };
+		7CCC64C324603C67007F0442 /* covid.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCC64C224603C67007F0442 /* covid.png */; };
+		7CCC64C524603C6B007F0442 /* good.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCC64C424603C6B007F0442 /* good.png */; };
+		7CCC64C724603C6F007F0442 /* grat.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCC64C624603C6F007F0442 /* grat.png */; };
+		7CCC64C924603C74007F0442 /* nyt3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCC64C824603C74007F0442 /* nyt3.png */; };
+		7CCC64CB24603C79007F0442 /* dep.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCC64CA24603C79007F0442 /* dep.png */; };
+		7CCC64CD24603C7D007F0442 /* fall.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCC64CC24603C7C007F0442 /* fall.png */; };
+		7CCC64CF24603C80007F0442 /* godnews.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCC64CE24603C80007F0442 /* godnews.png */; };
+		7CCC64D124603C83007F0442 /* nyt.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCC64D024603C83007F0442 /* nyt.png */; };
+		7CCC64D324603C86007F0442 /* moodballs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7CCC64D224603C86007F0442 /* moodballs.jpg */; };
+		7CCC64D524603C89007F0442 /* Lost.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCC64D424603C89007F0442 /* Lost.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +55,17 @@
 		7CCC64BA24603887007F0442 /* meh2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meh2.png; sourceTree = "<group>"; };
 		7CCC64BC2460388E007F0442 /* sad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sad.png; sourceTree = "<group>"; };
 		7CCC64BE24603895007F0442 /* mad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mad.png; sourceTree = "<group>"; };
+		7CCC64C024603C63007F0442 /* anxiety.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = anxiety.png; sourceTree = "<group>"; };
+		7CCC64C224603C67007F0442 /* covid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = covid.png; sourceTree = "<group>"; };
+		7CCC64C424603C6B007F0442 /* good.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = good.png; sourceTree = "<group>"; };
+		7CCC64C624603C6F007F0442 /* grat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grat.png; sourceTree = "<group>"; };
+		7CCC64C824603C74007F0442 /* nyt3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nyt3.png; sourceTree = "<group>"; };
+		7CCC64CA24603C79007F0442 /* dep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dep.png; sourceTree = "<group>"; };
+		7CCC64CC24603C7C007F0442 /* fall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fall.png; sourceTree = "<group>"; };
+		7CCC64CE24603C80007F0442 /* godnews.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = godnews.png; sourceTree = "<group>"; };
+		7CCC64D024603C83007F0442 /* nyt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nyt.png; sourceTree = "<group>"; };
+		7CCC64D224603C86007F0442 /* moodballs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = moodballs.jpg; sourceTree = "<group>"; };
+		7CCC64D424603C89007F0442 /* Lost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lost.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +111,17 @@
 				7CCC64BA24603887007F0442 /* meh2.png */,
 				24467849245F674600F0F7E0 /* AnalysisViewController.swift */,
 				24467847245F658900F0F7E0 /* moodEntryViewController.swift */,
+				7CCC64CC24603C7C007F0442 /* fall.png */,
+				7CCC64C824603C74007F0442 /* nyt3.png */,
+				7CCC64CE24603C80007F0442 /* godnews.png */,
+				7CCC64C624603C6F007F0442 /* grat.png */,
+				7CCC64CA24603C79007F0442 /* dep.png */,
+				7CCC64D224603C86007F0442 /* moodballs.jpg */,
+				7CCC64D424603C89007F0442 /* Lost.png */,
+				7CCC64D024603C83007F0442 /* nyt.png */,
+				7CCC64C424603C6B007F0442 /* good.png */,
+				7CCC64C224603C67007F0442 /* covid.png */,
+				7CCC64C024603C63007F0442 /* anxiety.png */,
 				7C8693B824566CA90042647B /* Assets.xcassets */,
 				7C8693BA24566CA90042647B /* LaunchScreen.storyboard */,
 				7C8693BD24566CA90042647B /* Info.plist */,
@@ -156,12 +189,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CCC64BF24603895007F0442 /* mad.png in Resources */,
+				7CCC64C924603C74007F0442 /* nyt3.png in Resources */,
 				7C8693BC24566CA90042647B /* LaunchScreen.storyboard in Resources */,
+				7CCC64C724603C6F007F0442 /* grat.png in Resources */,
+				7CCC64C124603C63007F0442 /* anxiety.png in Resources */,
 				7CCC64BB24603888007F0442 /* meh2.png in Resources */,
 				7CCC64BD2460388E007F0442 /* sad.png in Resources */,
 				7C8693B924566CA90042647B /* Assets.xcassets in Resources */,
+				7CCC64C324603C67007F0442 /* covid.png in Resources */,
 				7CCC64B924603882007F0442 /* meh1.png in Resources */,
+				7CCC64CD24603C7D007F0442 /* fall.png in Resources */,
+				7CCC64D324603C86007F0442 /* moodballs.jpg in Resources */,
+				7CCC64C524603C6B007F0442 /* good.png in Resources */,
+				7CCC64CF24603C80007F0442 /* godnews.png in Resources */,
 				7CCC64B72460387A007F0442 /* happy2.png in Resources */,
+				7CCC64CB24603C79007F0442 /* dep.png in Resources */,
+				7CCC64D124603C83007F0442 /* nyt.png in Resources */,
+				7CCC64D524603C89007F0442 /* Lost.png in Resources */,
 				7CCC64B52460382D007F0442 /* happy1.png in Resources */,
 				7C8693B424566CA40042647B /* Main.storyboard in Resources */,
 			);
