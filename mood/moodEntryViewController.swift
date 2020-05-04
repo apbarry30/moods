@@ -18,11 +18,6 @@ class moodEntryViewController: UIViewController, UIPickerViewDataSource, UIPicke
         //slider variables
      @IBOutlet var outputMoodScale: UILabel!
      var curMood: String?
-    
-    //calc
-    @IBOutlet var calc: UILabel!
-    var meanString: String?
-
 
         
  @IBOutlet var picker: UIPickerView!
@@ -68,7 +63,7 @@ class moodEntryViewController: UIViewController, UIPickerViewDataSource, UIPicke
         var weekItems:[String] = [""]
         
         var moodNumbers:[String] = ["0"]
-    var moodNumberNum:[Int] = [0]
+        var moodNumberNum:[Int] = [0]
           //reset when done
 
         @IBAction func reset(){
@@ -93,7 +88,7 @@ class moodEntryViewController: UIViewController, UIPickerViewDataSource, UIPicke
         
         let mean = Double(sum) / Double(array.count)
         print(mean)
-        meanString = String(calculateMean(array: moodNumberNum))
+//        meanString = String(calculateMean(array: moodNumberNum))
         return Double(mean)
     }
     
@@ -113,10 +108,6 @@ class moodEntryViewController: UIViewController, UIPickerViewDataSource, UIPicke
             }
             if let feelScale = curMood {
                 UserDefaults.standard.set(feelScale,forKey:"number")
-            }
-            
-            if let StringAverage =  meanString {
-                UserDefaults.standard.set(StringAverage,forKey:"mean")
             }
             
             print(calculateMean(array: moodNumberNum))

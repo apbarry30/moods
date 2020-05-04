@@ -29,9 +29,9 @@ class AnalysisViewController: UIViewController {
         if let moodScale = UserDefaults.standard.string(forKey:"number") {
                    feelingScale.text = "My Mood Score is: \(moodScale)"
                       }
-        if let moodmean = UserDefaults.standard.string(forKey:"mean") {
-        feelingScale.text = "Your Average Mood is: \(moodmean)"
-           }
+//        if let moodmean = UserDefaults.standard.string(forKey:"mean") {
+//        feelingScale.text = "Your Average Mood is: \(moodmean)"
+//           }
         // Do any additional setup after loading the view.
     }
     
