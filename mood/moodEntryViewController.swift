@@ -111,6 +111,8 @@ class moodEntryViewController: UIViewController, UIPickerViewDataSource, UIPicke
             }
             
             print(calculateMean(array: moodNumberNum))
+            print(weekItems)
+            print(moodNumbers)
         }
             override func viewDidLoad() {
                 super.viewDidLoad()
