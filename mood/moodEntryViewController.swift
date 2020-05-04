@@ -11,12 +11,13 @@ import UIKit
 class moodEntryViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
     @IBOutlet var slider:UISlider!
-          var currentValue: Int = 50
+    var currentValue: Int = 50
 
-            var weekArray:[String] = ["Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-            var curDay: String?
+     var weekArray:[String] = ["Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+     var curDay: String?
         //slider variables
-        @IBOutlet var outputMoodScale: UILabel!
+     @IBOutlet var outputMoodScale: UILabel!
+     var curMood: String?
 
         
  @IBOutlet var picker: UIPickerView!
@@ -24,7 +25,7 @@ class moodEntryViewController: UIViewController, UIPickerViewDataSource, UIPicke
     //protocol for picker view;
           func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
                  if (component == 0){
-                     curDay = weekArray[row]
+                    curDay = weekArray[row]
                     print(curDay!)
                     //user just selected their day of the week
                  }
@@ -42,10 +43,8 @@ class moodEntryViewController: UIViewController, UIPickerViewDataSource, UIPicke
              
              //protocol for delegate
              func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+                weekItems.append(String(weekArray[row]))
                 return String(weekArray[row])
-                var pickedDay = String(weekArray[row])
-                print(pickedDay)
-            
              }
         
         
@@ -53,19 +52,25 @@ class moodEntryViewController: UIViewController, UIPickerViewDataSource, UIPicke
         @IBAction func sliderMoved(slider:UISlider){
             currentValue = lroundf(slider.value)
             print("the value of the slider is now: \(slider.value)")
+            curMood = String(currentValue)
+            moodNumbers.append(curMood ?? "0")
             outputMoodScale.text = String(currentValue)
-            moodNumber.append(currentValue)
+//            moodNumber.append(currentValue)
             
         }
-
-        var weekItems:[String] = [""]
-        var moodNumber:[Int] = []
+//anaysis
+        var weekItems:[String] = []
+        var moodNumbers:[String] = []
           //reset when done
 
         @IBAction func reset(){
-                         print(moodNumber)
+            outputMoodScale.text = "50"
+            slider.value = 50
+            reminders.text = " "
+            picker.reloadAllComponents()
+                print(moodNumbers)
                 print(weekItems)
-            
+                print(curMood)
         }
         
         //analysis
@@ -75,6 +80,12 @@ class moodEntryViewController: UIViewController, UIPickerViewDataSource, UIPicke
         @IBAction func continuepressed(){
             if let name = reminders.text{
                 UserDefaults.standard.set(name,forKey:"name")
+            }
+            if let moodDay = curDay {
+                UserDefaults.standard.set(moodDay,forKey:"mood")
+            }
+            if let feelScale = curMood {
+                UserDefaults.standard.set(feelScale,forKey:"number")
             }
         }
         

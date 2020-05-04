@@ -9,10 +9,24 @@
 import UIKit
 
 class AnalysisViewController: UIViewController {
-
+    @IBOutlet var reminderLabel:UITextView!
+    @IBOutlet var dayofWeek: UITextView!
+    @IBOutlet var feelingScale: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        if let name = UserDefaults.standard.string(forKey: "name"){
+                  reminderLabel.text = "\(name)!"
+              }
+        
+        if let moodDay = UserDefaults.standard.string(forKey:"mood") {
+            dayofWeek.text = "\(moodDay)'s Entry"
+               }
+        
+        if let moodScale = UserDefaults.standard.string(forKey:"number") {
+                   feelingScale.text = "My Mood Score is: \(moodScale)"
+                      }
         // Do any additional setup after loading the view.
     }
     
