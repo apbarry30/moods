@@ -22,7 +22,16 @@ class moodEntryViewController: UIViewController, UIPickerViewDataSource, UIPicke
 
         
  @IBOutlet var picker: UIPickerView!
-        
+    
+    @IBOutlet weak var button1:UIButton!
+    
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            // Do any additional setup after loading the view.
+            button1.setImage(UIImage(named:"happy1.png"), for: UIControl.State.normal)
+        }
+    
+    
     //protocol for picker view;
           func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
                  if (component == 0){
@@ -113,6 +122,25 @@ class moodEntryViewController: UIViewController, UIPickerViewDataSource, UIPicke
             weekItems.append(curDay!)
             moodNumbers.append(curMood!)
             
+            
+            
+            if curDay=="Monday"{
+                if let name = curMood {
+                UserDefaults.standard.set(name,forKey:"Mname")}
+                if let moodDay = curDay {
+                UserDefaults.standard.set(moodDay,forKey:"Mmood")}
+                if let feelScale = curMood {
+                UserDefaults.standard.set(feelScale,forKey:"Mnumber")}}
+            if curDay=="Tuesday"{
+                if let name = curMood {
+                UserDefaults.standard.set(name,forKey:"Tname")}
+                if let moodDay = curDay {
+                UserDefaults.standard.set(moodDay,forKey:"Tmood")}
+                if let feelScale = curMood {
+                UserDefaults.standard.set(feelScale,forKey:"Tnumber")}}
+
+            
+    /*
             if curMood != nil {
                 if let name = curMood {
                     UserDefaults.standard.set(name,forKey:"name")
@@ -142,7 +170,7 @@ class moodEntryViewController: UIViewController, UIPickerViewDataSource, UIPicke
     
         }
         
-
+*/
 
 
     /*
@@ -154,5 +182,9 @@ class moodEntryViewController: UIViewController, UIPickerViewDataSource, UIPicke
         // Pass the selected object to the new view controller.
     }
     */
+
+
+    }
+ }
 
 

@@ -17,6 +17,12 @@
 		7C8693B724566CA40042647B /* mood.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7C8693B524566CA40042647B /* mood.xcdatamodeld */; };
 		7C8693B924566CA90042647B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C8693B824566CA90042647B /* Assets.xcassets */; };
 		7C8693BC24566CA90042647B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C8693BA24566CA90042647B /* LaunchScreen.storyboard */; };
+		7CCC64B52460382D007F0442 /* happy1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCC64B42460382D007F0442 /* happy1.png */; };
+		7CCC64B72460387A007F0442 /* happy2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCC64B62460387A007F0442 /* happy2.png */; };
+		7CCC64B924603882007F0442 /* meh1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCC64B824603882007F0442 /* meh1.png */; };
+		7CCC64BB24603888007F0442 /* meh2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCC64BA24603887007F0442 /* meh2.png */; };
+		7CCC64BD2460388E007F0442 /* sad.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCC64BC2460388E007F0442 /* sad.png */; };
+		7CCC64BF24603895007F0442 /* mad.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCC64BE24603895007F0442 /* mad.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +38,12 @@
 		7C8693B824566CA90042647B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C8693BB24566CA90042647B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C8693BD24566CA90042647B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CCC64B42460382D007F0442 /* happy1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happy1.png; sourceTree = "<group>"; };
+		7CCC64B62460387A007F0442 /* happy2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happy2.png; sourceTree = "<group>"; };
+		7CCC64B824603882007F0442 /* meh1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meh1.png; sourceTree = "<group>"; };
+		7CCC64BA24603887007F0442 /* meh2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meh2.png; sourceTree = "<group>"; };
+		7CCC64BC2460388E007F0442 /* sad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sad.png; sourceTree = "<group>"; };
+		7CCC64BE24603895007F0442 /* mad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mad.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +81,12 @@
 				7C8693AE24566CA40042647B /* FirstViewController.swift */,
 				7C0577F4245BC98200E4B95F /* community.swift */,
 				7C8693B224566CA40042647B /* Main.storyboard */,
+				7CCC64B42460382D007F0442 /* happy1.png */,
+				7CCC64B62460387A007F0442 /* happy2.png */,
+				7CCC64BC2460388E007F0442 /* sad.png */,
+				7CCC64BE24603895007F0442 /* mad.png */,
+				7CCC64B824603882007F0442 /* meh1.png */,
+				7CCC64BA24603887007F0442 /* meh2.png */,
 				24467849245F674600F0F7E0 /* AnalysisViewController.swift */,
 				24467847245F658900F0F7E0 /* moodEntryViewController.swift */,
 				7C8693B824566CA90042647B /* Assets.xcassets */,
@@ -137,8 +155,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CCC64BF24603895007F0442 /* mad.png in Resources */,
 				7C8693BC24566CA90042647B /* LaunchScreen.storyboard in Resources */,
+				7CCC64BB24603888007F0442 /* meh2.png in Resources */,
+				7CCC64BD2460388E007F0442 /* sad.png in Resources */,
 				7C8693B924566CA90042647B /* Assets.xcassets in Resources */,
+				7CCC64B924603882007F0442 /* meh1.png in Resources */,
+				7CCC64B72460387A007F0442 /* happy2.png in Resources */,
+				7CCC64B52460382D007F0442 /* happy1.png in Resources */,
 				7C8693B424566CA40042647B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

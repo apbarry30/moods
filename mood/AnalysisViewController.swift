@@ -39,8 +39,15 @@ class AnalysisViewController: UIViewController {
     var days:[String] = [""]
     var Scale:[String] = [""]
     var reminders:[String] = [""]
-
     var curday: String?
+    
+    var MmoodDay=""
+    
+    
+    
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,8 +74,23 @@ class AnalysisViewController: UIViewController {
 //        feelingScale.text = "Your Average Mood is: \(moodmean)"
 //           }
         
-       
+
+        let MmoodDay = UserDefaults.standard.string(forKey:"Mmood")
+        let MmoodScale = UserDefaults.standard.string(forKey:"Mnumber")
+        if (MmoodDay == "Monday"){
+                mondayDay.text = "Entry for \(MmoodDay ?? "")"
+                monday.text = "My Mood Score is: \(MmoodScale ?? "")"}
+        let TmoodDay = UserDefaults.standard.string(forKey:"Tmood")
+        let TmoodScale = UserDefaults.standard.string(forKey:"Tnumber")
+        if (TmoodDay == "Tuesday"){
+                tuesdayDay.text = "Entry for \(TmoodDay ?? "")"
+                tuesday.text = "My Mood Score is: \(TmoodScale ?? "")"}
              
+        
+        
+        
+        
+        /*
                 if curday == "Sunday" {
                 let moodDay = UserDefaults.standard.string(forKey:"mood")
                 let moodScale = UserDefaults.standard.string(forKey:"number")
@@ -120,6 +142,17 @@ class AnalysisViewController: UIViewController {
                         saturday.text = "My Mood Score is: \(moodScale ?? "")"
                     
                 }
+ 
+ */
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 //    let moodNum = UserDefaults.standard.string(forKey:"number")
 //    sundayDay.text = "Mood Scale" \(moodNum)"
 //
